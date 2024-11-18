@@ -1,0 +1,58 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<style>
+    body {
+        background-color: #f7f7f7;
+        font-family: 'Arial', sans-serif;
+    }
+
+    h2 {
+        color: #5d3f6b;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    h4, h5 {
+        color: #333;
+    }
+
+    .info-card {
+        background-color: white;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+        .info-card h4 {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+        }
+
+        .info-card h5 {
+            font-size: 1rem;
+            margin-bottom: 6px;
+        }
+
+    .highlight {
+        color: #5d3f6b;
+        font-weight: bold;
+    }
+
+    .container {
+        margin-top: 50px;
+    }
+</style>
+
+<div class="container">
+    <div class="info-card text-center">
+        <h4>Nombre: <span class="highlight">@ViewBag.empleado.Nombre</span></h4>
+        <h5>Telefono: <span class="highlight">@ViewBag.empleado.Telefono</span></h5>
+        <h5>Cargo: <span class="highlight">@ViewBag.empleado.Cargo</span></h5>
+        <h5>Email: <span class="highlight">@ViewBag.empleado.Email</span></h5>
+    </div>
+</div>

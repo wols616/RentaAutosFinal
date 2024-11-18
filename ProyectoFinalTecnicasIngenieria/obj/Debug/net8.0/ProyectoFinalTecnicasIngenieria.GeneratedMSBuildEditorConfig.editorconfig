@@ -1,0 +1,99 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = ProyectoFinalTecnicasIngenieria
+build_property.RootNamespace = ProyectoFinalTecnicasIngenieria
+build_property.ProjectDir = C:\Users\wilber\source\repos\ProyectoFinalTecnicasIngenieria\ProyectoFinalTecnicasIngenieria\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\wilber\source\repos\ProyectoFinalTecnicasIngenieria\ProyectoFinalTecnicasIngenieria
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/wilber/source/repos/ProyectoFinalTecnicasIngenieria/ProyectoFinalTecnicasIngenieria/Views/Auto/agregarAuto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0b1xhZ3JlZ2FyQXV0by5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wilber/source/repos/ProyectoFinalTecnicasIngenieria/ProyectoFinalTecnicasIngenieria/Views/Auto/editarAuto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0b1xlZGl0YXJBdXRvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wilber/source/repos/ProyectoFinalTecnicasIngenieria/ProyectoFinalTecnicasIngenieria/Views/Auto/listaAutos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0b1xsaXN0YUF1dG9zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wilber/source/repos/ProyectoFinalTecnicasIngenieria/ProyectoFinalTecnicasIngenieria/Views/Auto/verAuto.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0b1x2ZXJBdXRvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wilber/source/repos/ProyectoFinalTecnicasIngenieria/ProyectoFinalTecnicasIngenieria/Views/Cliente/agregarCliente.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxhZ3JlZ2FyQ2xpZW50ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wilber/source/repos/ProyectoFinalTecnicasIngenieria/ProyectoFinalTecnicasIngenieria/Views/Cliente/editarCliente.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxlZGl0YXJDbGllbnRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wilber/source/repos/ProyectoFinalTecnicasIngenieria/ProyectoFinalTecnicasIngenieria/Views/Cliente/verCliente.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVx2ZXJDbGllbnRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wilber/source/repos/ProyectoFinalTecnicasIngenieria/ProyectoFinalTecnicasIngenieria/Views/Empleado/agregarEmpleado.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9cYWdyZWdhckVtcGxlYWRvLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wilber/source/repos/ProyectoFinalTecnicasIngenieria/ProyectoFinalTecnicasIngenieria/Views/Empleado/editarEmpleado.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9cZWRpdGFyRW1wbGVhZG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wilber/source/repos/ProyectoFinalTecnicasIngenieria/ProyectoFinalTecnicasIngenieria/Views/Empleado/listaEmpleado.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9cbGlzdGFFbXBsZWFkby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wilber/source/repos/ProyectoFinalTecnicasIngenieria/ProyectoFinalTecnicasIngenieria/Views/Empleado/verEmpleado.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9cdmVyRW1wbGVhZG8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wilber/source/repos/ProyectoFinalTecnicasIngenieria/ProyectoFinalTecnicasIngenieria/Views/Factura/listaFacturas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjdHVyYVxsaXN0YUZhY3R1cmFzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wilber/source/repos/ProyectoFinalTecnicasIngenieria/ProyectoFinalTecnicasIngenieria/Views/Factura/verFactura.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjdHVyYVx2ZXJGYWN0dXJhLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wilber/source/repos/ProyectoFinalTecnicasIngenieria/ProyectoFinalTecnicasIngenieria/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wilber/source/repos/ProyectoFinalTecnicasIngenieria/ProyectoFinalTecnicasIngenieria/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wilber/source/repos/ProyectoFinalTecnicasIngenieria/ProyectoFinalTecnicasIngenieria/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wilber/source/repos/ProyectoFinalTecnicasIngenieria/ProyectoFinalTecnicasIngenieria/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wilber/source/repos/ProyectoFinalTecnicasIngenieria/ProyectoFinalTecnicasIngenieria/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wilber/source/repos/ProyectoFinalTecnicasIngenieria/ProyectoFinalTecnicasIngenieria/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/wilber/source/repos/ProyectoFinalTecnicasIngenieria/ProyectoFinalTecnicasIngenieria/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-z69gisiod5

@@ -1,0 +1,72 @@
+﻿
+
+<table class="table table-bordered table-hover">
+    <thead class="thead-dark">
+        <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>DUI</th>
+            <th>Telefono</th>
+            <th>Email</th>
+            <th>Direccion</th>
+
+        </tr>
+    </thead>
+    @foreach (var cliente in (ViewBag.Clientes as IEnumerable<Clientes>))
+    {
+        <tr>
+            <td>@cliente.idcliente</td>
+            <td>@cliente.Nombre</td>
+            <td>@cliente.DUI</td>
+            <td>@cliente.Telefono</td>
+            <td>@cliente.Email</td>
+            <td>@cliente.Direccion</td>
+            <td>
+
+                <!-- Formulario para Editar -->
+                <form action="/Cliente/editarCliente" method="post" style="display: inline;">
+                    <input type="hidden" name="id" value="@cliente.idcliente" />
+                    <button type="submit" class="btn btn-warning">Editar</button>
+                </form>
+
+                <!-- Formulario para Eliminar -->
+                <form action="/Cliente/eliminando" method="post" style="display: inline;">
+                    <input type="hidden" name="idcliente" value="@cliente.idcliente" />
+                    <button type="submit" class="btn btn-danger">Eliminar</button>
+                </form>
+            </td>
+        </tr>
+    }
+</table>
+
+<h2>Agregue los datos del Cliente</h2>
+
+
+<form action="/Cliente/Crear" class="container mt-4 w-50">
+
+    <div class="form-group">
+        <label>Nombre</label>
+        <input type="text" class="form-control" name="Nombre" required />
+    </div>
+    <div class="form-group">
+        <label>Telefono</label>
+        <input type="text" class="form-control" name="Telefono" required />
+    </div>
+    <div class="form-group">
+        <label>DUI</label>
+        <input type="text" class="form-control" name="DUI" required />
+    </div>
+    <div class="form-group">
+        <label>Correo Electronico</label>
+        <input type="text" class="form-control" name="Email" required />
+    </div>
+    <div class="form-group">
+        <label>Direccion</label>
+        <input type="text" class="form-control" name="Direccion" required />
+    </div>
+
+    <button type="submit" class="btn btn-success mt-3">Guardar</button>
+    @*      MODIFICAS A QUE DEVUELVA A HOME
+    *@@*     <a href="@Url.Action("Listado", "Home")" class="btn btn-secondary mt-3">Cancelar</a> *@
+</form>
+

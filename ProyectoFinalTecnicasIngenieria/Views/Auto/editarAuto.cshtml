@@ -1,0 +1,98 @@
+﻿
+
+<style>
+    body {
+        background-color: #f7f7f7;
+        font-family: 'Arial', sans-serif;
+    }
+
+    h1 {
+        color: #5d3f6b;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .form-container {
+        max-width: 500px;
+        margin: 30px auto;
+        background-color: #ffffff;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-control {
+        border-radius: 4px;
+        margin-bottom: 15px;
+    }
+
+    .btn {
+        width: 100%;
+        border-radius: 4px;
+        font-size: 16px;
+    }
+
+    label {
+        font-weight: bold;
+        color: #333333;
+    }
+
+    .alert {
+        margin-top: 20px;
+    }
+</style>
+
+<div class="form-container">
+    <h1>Editar Auto</h1>
+
+    <!-- Mensajes de éxito o error -->
+    @if (ViewBag.Exito != null)
+    {
+        if (ViewBag.Exito == 1)
+        {
+            <div class="alert alert-success">Los datos del alumno fueron actualizados con éxito.</div>
+        }
+        else if (ViewBag.Exito == 0)
+        {
+            <div class="alert alert-danger">Hubo un error al actualizar los datos del alumno.</div>
+        }
+    }
+
+    <!-- Formulario de edición de Auto -->
+    <form action="/Auto/EditandoAuto" method="post" class="p-4 bg-white rounded shadow-sm">
+        <input type="hidden" name="idauto" value="@ViewBag.autos.idauto" />
+
+        <div class="form-group mb-3">
+            <label for="Marca" class="form-label">Marca</label>
+            <input type="text" class="form-control" name="Marca" value="@ViewBag.autos.Marca" required />
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="Modelo" class="form-label">Modelo</label>
+            <input type="text" class="form-control" name="Modelo" value="@ViewBag.autos.Modelo" required />
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="Placa" class="form-label">Placa</label>
+            <input type="text" class="form-control" name="Placa" value="@ViewBag.autos.Placa" required />
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="Tipo" class="form-label">Tipo</label>
+            <input type="text" class="form-control" name="Tipo" value="@ViewBag.autos.Tipo" required />
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="Estado" class="form-label">Estado</label>
+            <input type="text" class="form-control" name="Estado" value="@ViewBag.autos.Estado" required />
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="Costo_dia" class="form-label">Costo por Día</label>
+            <input type="number" step="0.01" class="form-control" name="Costo_dia" value="@ViewBag.autos.Costo_dia" required />
+        </div>
+
+        <button type="submit" class="btn btn-success w-100">Actualizar</button>
+    </form>
+
+</div>

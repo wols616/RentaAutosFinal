@@ -1,0 +1,62 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<!-- Agregar Autos -->
+<h1 class="text-center mb-4 mt-5">Agregar Autos</h1>
+
+@if (ViewBag.exito == 1)
+{
+    <p class="alert alert-success">Se agregó correctamente</p>
+}
+else if (ViewBag.exito == 0)
+{
+    <p class="alert alert-danger">Hubo un error al agregar</p>
+}
+
+<!-- Formulario para agregar Autos -->
+<form action="/Auto/AgregandoAutos" method="post" class="d-flex flex-column align-items-center">
+
+    <div class="mb-3 w-50">
+        <label for="Marca" class="form-label">Marca</label>
+        <input type="text" id="Marca" class="form-control" name="Marca" placeholder="Ingrese la Marca" required />
+    </div>
+
+    <div class="mb-3 w-50">
+        <label for="Modelo" class="form-label">Modelo</label>
+        <input type="text" id="Modelo" class="form-control" name="Modelo" placeholder="Ingrese el Modelo" required />
+    </div>
+
+    <div class="mb-3 w-50">
+        <label for="Placa" class="form-label">Placa</label>
+        <input type="text" id="Placa" class="form-control" name="Placa" placeholder="Ingrese la Placa" required />
+    </div>
+
+    <div class="mb-3 w-50">
+        <label for="Tipo" class="form-label">Tipo</label>
+        <select id="Tipo" class="form-select" name="Tipo" required>
+            <option value="Sedán">Sedán</option>
+            <option value="SUV">SUV</option>
+            <option value="Camioneta">Camioneta</option>
+            <option value="Deportivo">Deportivo</option>
+        </select>
+    </div>
+
+    <div class="mb-3 w-50">
+        <label for="Estado" class="form-label">Estado</label>
+        <select id="Estado" class="form-select" name="Estado" required>
+            <option value="Disponible">Disponible</option>
+            <option value="En Mantenimiento">En Mantenimiento</option>
+            <option value="Rentado">Rentado</option>
+        </select>
+    </div>
+
+    <div class="mb-3 w-50">
+        <label for="Costo_dia" class="form-label">Costo por Día</label>
+        <input type="number" id="Costo_dia" class="form-control" name="Costo_dia" placeholder="Ingrese el Costo por Día" step="0.01" min="0" required />
+    </div>
+
+    <button class="btn btn-primary mt-3" type="submit">Agregar</button>
+</form>

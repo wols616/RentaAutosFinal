@@ -1,0 +1,41 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<h2>Edite los datos del Cliente</h2>
+
+<form action="/Cliente/editando" class="container mt-4 w-50">
+
+    <div class="form-group">
+        <input type="hidden" class="form-control" name="idcliente" value="@ViewBag.datosCliente.idcliente" required />
+    </div>
+    <div class="form-group">
+        <label>Nombre</label>
+        <input type="text" class="form-control" name="Nombre" value="@ViewBag.datosCliente.Nombre" required />
+    </div>
+    <div class="form-group">
+        <label>Telefono</label>
+        <input type="text" class="form-control" name="Telefono" value="@ViewBag.datosCliente.Telefono" required />
+    </div>
+    <div class="form-group">
+        <label>DUI</label>
+        <input type="text" class="form-control" name="DUI" value="@ViewBag.datosCliente.DUI" required />
+    </div>
+    <div class="form-group">
+        <label>Correo Electronico</label>
+        <input type="text" class="form-control" name="Email" value="@ViewBag.datosCliente.Email" required />
+    </div>
+    <div class="form-group">
+        <label>Direccion</label>
+        <input type="text" class="form-control" name="Direccion" value="@ViewBag.datosCliente.Direccion" required />
+    </div>
+
+    <button type="submit" class="btn btn-success mt-3">Editar</button>
+    @*      MODIFICAS A QUE DEVUELVA A HOME
+    *@@*     <a href="@Url.Action("Listado", "Home")" class="btn btn-secondary mt-3">Cancelar</a> *@
+</form>
+
+
+

@@ -1,0 +1,66 @@
+﻿
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<div class="container mt-5">
+    <!-- Titulo de la pagina -->
+    <h1 class="text-center mb-4">Listado de Empleados</h1>
+    <a href="@Url.Action("AgregarEmpleado", "Empleado")" class="btn custom-btn-info">
+        <i class="bi bi-plus-square-fill"></i>
+    </a>
+    <!-- Tabla de Alumnos -->
+    <table class="table table-bordered table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th>ID</th>
+                <th>Nombre</th>
+                <th>Telefono</th>
+                <th>Cargo</th>
+                <th>Email
+                <th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in (ViewBag.empleado as IEnumerable<Empleados>))
+            {
+                <tr>
+                    <td>@item.idempleado</td>
+                    <td>@item.Nombre</td>
+                    <td>@item.Telefono</td>
+                    <td>@item.Cargo</td>
+                    <td>@item.Email</td>
+
+                    <td>
+                        <a href="@Url.Action("VerEmpleado", "Empleado", new { id = @item.idempleado })" class="btn btn-info"><i class="bi bi-eye-fill"></i></a>
+                    </td>
+                    <td>
+                        <a href="@Url.Action("BorrandoEmpleados", "Empleado", new { id = @item.idempleado })" class="btn btn-danger"><i class="bi bi-trash3-fill"></i></a>
+                    </td>
+                    <td>
+                        <a href="@Url.Action("EditarEmpleados", "Empleado", new { id = @item.idempleado })" class="btn btn-warning"><i class="bi bi-pencil-square"></i></a>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>
+
+<style>
+    .custom-btn-info {
+        background-color: green; /* color original de btn-info */
+        color: white; /* Asegura que el ícono sea visible */
+        border: none;
+    }
+
+        .custom-btn-info:hover {
+            background-color: #138496; /* Color más oscuro al pasar el cursor */
+        }
+
+        .custom-btn-info i {
+            font-size: 1.5em; /* Aumenta el tamaño del ícono si es necesario */
+        }
+</style>

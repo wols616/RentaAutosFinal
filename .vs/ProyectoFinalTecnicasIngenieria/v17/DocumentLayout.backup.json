@@ -1,0 +1,85 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\wilber\\source\\repos\\ProyectoFinalTecnicasIngenieria\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{65D5D3C0-E523-4F6D-8EE1-28B9DD237D84}|ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria.csproj|c:\\users\\wilber\\source\\repos\\proyectofinaltecnicasingenieria\\proyectofinaltecnicasingenieria\\views\\auto\\listaautos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{65D5D3C0-E523-4F6D-8EE1-28B9DD237D84}|ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria.csproj|solutionrelative:proyectofinaltecnicasingenieria\\views\\auto\\listaautos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65D5D3C0-E523-4F6D-8EE1-28B9DD237D84}|ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria.csproj|c:\\users\\wilber\\source\\repos\\proyectofinaltecnicasingenieria\\proyectofinaltecnicasingenieria\\views\\empleado\\listaempleado.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{65D5D3C0-E523-4F6D-8EE1-28B9DD237D84}|ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria.csproj|solutionrelative:proyectofinaltecnicasingenieria\\views\\empleado\\listaempleado.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65D5D3C0-E523-4F6D-8EE1-28B9DD237D84}|ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria.csproj|c:\\users\\wilber\\source\\repos\\proyectofinaltecnicasingenieria\\proyectofinaltecnicasingenieria\\controllers\\empleadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{65D5D3C0-E523-4F6D-8EE1-28B9DD237D84}|ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria.csproj|solutionrelative:proyectofinaltecnicasingenieria\\controllers\\empleadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "listaAutos.cshtml",
+              "DocumentMoniker": "C:\\Users\\wilber\\source\\repos\\ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria\\Views\\Auto\\listaAutos.cshtml",
+              "RelativeDocumentMoniker": "ProyectoFinalTecnicasIngenieria\\Views\\Auto\\listaAutos.cshtml",
+              "ToolTip": "C:\\Users\\wilber\\source\\repos\\ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria\\Views\\Auto\\listaAutos.cshtml",
+              "RelativeToolTip": "ProyectoFinalTecnicasIngenieria\\Views\\Auto\\listaAutos.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-17T01:14:38.773Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmpleadoController.cs",
+              "DocumentMoniker": "C:\\Users\\wilber\\source\\repos\\ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria\\Controllers\\EmpleadoController.cs",
+              "RelativeDocumentMoniker": "ProyectoFinalTecnicasIngenieria\\Controllers\\EmpleadoController.cs",
+              "ToolTip": "C:\\Users\\wilber\\source\\repos\\ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria\\Controllers\\EmpleadoController.cs",
+              "RelativeToolTip": "ProyectoFinalTecnicasIngenieria\\Controllers\\EmpleadoController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T01:06:42.861Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "listaEmpleado.cshtml",
+              "DocumentMoniker": "C:\\Users\\wilber\\source\\repos\\ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria\\Views\\Empleado\\listaEmpleado.cshtml",
+              "RelativeDocumentMoniker": "ProyectoFinalTecnicasIngenieria\\Views\\Empleado\\listaEmpleado.cshtml",
+              "ToolTip": "C:\\Users\\wilber\\source\\repos\\ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria\\Views\\Empleado\\listaEmpleado.cshtml",
+              "RelativeToolTip": "ProyectoFinalTecnicasIngenieria\\Views\\Empleado\\listaEmpleado.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-17T01:05:46.415Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

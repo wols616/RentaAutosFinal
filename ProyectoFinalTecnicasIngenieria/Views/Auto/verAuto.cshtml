@@ -1,0 +1,61 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<style>
+    body {
+        background-color: #f7f7f7;
+        font-family: 'Arial', sans-serif;
+    }
+
+    h2 {
+        color: #5d3f6b;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    h4, h5 {
+        color: #333;
+    }
+
+    .info-card {
+        background-color: white;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+        .info-card h4 {
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+        }
+
+        .info-card h5 {
+            font-size: 1rem;
+            margin-bottom: 6px;
+        }
+
+    .highlight {
+        color: #5d3f6b;
+        font-weight: bold;
+    }
+
+    .container {
+        margin-top: 50px;
+    }
+</style>
+
+<div class="container">
+    <div class="info-card text-center">
+        <h4>Marca: <span class="highlight">@ViewBag.autos.Marca</span></h4>
+        <h5>Modelo: <span class="highlight">@ViewBag.autos.Modelo</span></h5>
+        <h5>Placa: <span class="highlight">@ViewBag.autos.Placa</span></h5>
+        <h5>Tipo: <span class="highlight">@ViewBag.autos.Tipo</span></h5>
+        <h5>Estado: <span class="highlight">@ViewBag.autos.Estado</span></h5>
+        <h5>Costo: <span class="highlight">@ViewBag.autos.Costo_dia</span></h5>
+
+    </div>
+</div>

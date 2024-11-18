@@ -1,0 +1,44 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<!-- Agregar Empleados -->
+<h1 class="text-center mb-4 mt-5">Agregar Empleados</h1>
+
+@if (ViewBag.exito == 1)
+{
+    <p class="alert alert-success">Se agregó correctamente</p>
+}
+else if (ViewBag.exito == 0)
+{
+    <p class="alert alert-danger">Hubo un error al agregar</p>
+}
+
+<!-- Formulario para agregar Empleados -->
+<form action="/Empleado/AgregandoEmpleados" method="post" class="d-flex flex-column align-items-center">
+
+    <div class="mb-3 w-50">
+        <label for="Nombre" class="form-label">Nombre</label>
+        <input type="text" id="Nombre" class="form-control" name="Nombre" placeholder="Ingrese nombre completo" required />
+    </div>
+
+    <div class="mb-3 w-50">
+        <label for="Telefono" class="form-label">Telefono</label>
+        <input type="text" id="Telefono" class="form-control" name="Telefono" placeholder="Ingrese el teléfono" required />
+    </div>
+
+    <div class="mb-3 w-50">
+        <label for="Cargo" class="form-label">Cargo</label>
+        <input type="text" id="Cargo" class="form-control" name="Cargo" placeholder="Ingrese el cargo" required />
+    </div>
+
+
+    <div class="mb-3 w-50">
+        <label for="Email" class="form-label">Email</label>
+        <input type="text" id="Email" class="form-control" name="Email" placeholder="Ingrese el E-mail" step="0.01" min="0" required />
+    </div>
+
+    <button class="btn btn-primary mt-3" type="submit">Agregar</button>
+</form>

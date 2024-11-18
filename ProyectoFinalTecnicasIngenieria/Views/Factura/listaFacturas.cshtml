@@ -1,0 +1,53 @@
+﻿
+@{
+}
+
+<div class="container mt-5">
+    <h1 class="text-center mb-4">Listado de Facturas</h1>
+
+    <table class="table table-bordered table-hover">
+        <thead class="thead-dark">
+            <tr>
+                <th>ID FACTURA</th>
+                <th>ID CLIENTE</th>
+                <th>ID AUTO</th>
+                <th>ID EMPLEADO</th>
+                <th>FECHA</th>
+                <th>SUBTOTAL</th>
+                <th>IVA</th>
+                <th>TOTAL</th>
+                <th>Ver</th>
+                <th>Borrar</th>
+                <th>Editar</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in (ViewBag.facturas as IEnumerable<Facturas>))
+            {
+                <tr>
+                    <td>@item.idFactura</td>
+                    <td>@item.idCliente</td>
+                    <td>@item.idAuto</td>
+                    <td>@item.idEmpleado</td>
+                    <td>@item.fecha</td>
+                    <td>@item.subtotal</td>
+                    <td>@item.IVA</td>
+                    <td>@item.total</td>
+
+                    <td>
+                        <a href="@Url.Action("VerFactura", "Factura", new { id = @item.idFactura })" class="btn btn-info"><i class="bi bi-eye-fill"></i></a>
+                    </td>
+                     <td>
+
+                        <a href="@Url.Action("EliminarFactura", "Factura", new { id = @item.idFactura })" class="btn btn-danger"><i class="bi bi-trash3-fill"></i></a>
+                </td>
+                
+                </tr>
+            }
+        </tbody>
+    </table>
+
+
+
+
+</div>
