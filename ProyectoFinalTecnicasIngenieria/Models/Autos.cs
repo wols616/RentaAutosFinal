@@ -85,6 +85,7 @@ namespace ProyectoFinalTecnicasIngenieria.Models
             return listaAutos;
         }
 
+
         public void agregar(Autos auto)
         {
             string query = "insert into Autos(Marca, Modelo, Placa, Tipo, Estado, Costo_dia) values" + "(@Marca, @Modelo, @Placa, @Tipo, @Estado, @Costo_dia)";
@@ -124,6 +125,24 @@ namespace ProyectoFinalTecnicasIngenieria.Models
                 comando.Parameters.AddWithValue("@Costo_dia", auto.Costo_dia);
                 comando.Parameters.AddWithValue("@idauto", auto.idauto);
 
+
+                try
+                {
+                    conexion.Open();
+                    comando.ExecuteNonQuery();
+                    conexion.Close();
+                }
+                catch (Exception ex) { throw new Exception("Hubo un erro" + ex.Message); }
+            }
+        }
+
+        public void editarCampo(int idauto, string nombreCampo, string dato)
+        {
+            string query = $"update Autos set {nombreCampo} = {dato} where idauto=@idauto";
+            using (MySqlConnection conexion = new MySqlConnection(cadena))
+            {
+                MySqlCommand comando = new MySqlCommand(query, conexion);
+                comando.Parameters.AddWithValue("@idauto", idauto);
 
                 try
                 {

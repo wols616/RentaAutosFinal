@@ -32,7 +32,7 @@
                     <td>@item.Modelo</td>
                     <td>@item.Placa</td>
                     <td>@item.Tipo</td>
-                    <td>@item.Estado</td>
+                    <td>@(item.Estado == "1" ? "Disponible" : "No disponible")</td>
                     <td>@item.Costo_dia</td>
 
 

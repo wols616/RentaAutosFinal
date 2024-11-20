@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using ProyectoFinalTecnicasIngenieria.Models;
 
 namespace ProyectoFinalTecnicasIngenieria.Controllers
 {
@@ -8,5 +9,12 @@ namespace ProyectoFinalTecnicasIngenieria.Controllers
         {
             return View();
         }
+
+        public IActionResult AgregarAlquilado()
+        {
+            return View("agregarAlquilado");
+        }
+
+        
     }
 }

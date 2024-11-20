@@ -1,0 +1,57 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+
+<!-- Formulario para agregar Autos -->
+<form action="/Factura/AgregandoFactura" method="post" class="d-flex flex-column align-items-center">
+
+    <div class="mb-3 w-50">
+        <label for="Empleado" class="form-label">Empleado</label>
+        <select id="Empleado" class="form-select" name="idEmpleado" required>
+            @foreach (var empleado in ViewBag.Empleados)
+            {
+                <option value="@empleado.idempleado">@empleado.Nombre</option>
+            }
+        </select>
+    </div>
+
+    <div class="mb-3 w-50">
+        <label for="Fecha" class="form-label">Fecha</label>
+        <input type="date" id="Fecha" class="form-control" name="fecha" required />
+    </div>
+
+    <div class="mb-3 w-50">
+        <label for="Cliente" class="form-label">Cliente</label>
+        <select id="Cliente" class="form-select" name="idCliente" required>
+            @foreach (var cliente in ViewBag.Clientes)
+            {
+                <option value="@cliente.idcliente">@cliente.Nombre</option>
+            }
+        </select>
+    </div>
+
+    <div class="mb-3 w-50">
+        <label for="Auto" class="form-label">Auto</label>
+        <select id="Auto" class="form-select" name="idAuto" required>
+            @foreach (var auto in ViewBag.Autos)
+            {
+                @if (auto.Estado == "1")
+                {
+                    <option value="@auto.idauto">@auto.Marca</option>
+                }else{  
+                    <option disabled>@auto.Marca (No Disponible)</option>
+                }
+            }
+        </select>
+    </div>
+
+    <div class="mb-3 w-50">
+        <label for="DiasRentar" class="form-label">Cantidad de días a rentar</label>
+        <input type="text" id="DiasRentar" class="form-control" name="dias_rentar" required />
+    </div>
+
+
+    <button class="btn btn-primary mt-3" type="submit">Agregar</button>
+</form>

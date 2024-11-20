@@ -5,6 +5,10 @@
 <div class="container mt-5">
     <h1 class="text-center mb-4">Listado de Facturas</h1>
 
+    <a href="@Url.Action("AgregarFactura", "Factura")" class="btn custom-btn-info">
+        <i class="bi bi-plus-square-fill"></i>
+    </a>
+
     <table class="table table-bordered table-hover">
         <thead class="thead-dark">
             <tr>
@@ -13,6 +17,7 @@
                 <th>ID AUTO</th>
                 <th>ID EMPLEADO</th>
                 <th>FECHA</th>
+                <th>Dias Rentados</th>
                 <th>SUBTOTAL</th>
                 <th>IVA</th>
                 <th>TOTAL</th>
@@ -30,6 +35,7 @@
                     <td>@item.idAuto</td>
                     <td>@item.idEmpleado</td>
                     <td>@item.fecha</td>
+                    <td>@item.Dias_rentar</td>
                     <td>@item.subtotal</td>
                     <td>@item.IVA</td>
                     <td>@item.total</td>
@@ -51,3 +57,19 @@
 
 
 </div>
+
+<style>
+    .custom-btn-info {
+        background-color: green; /* color original de btn-info */
+        color: white; /* Asegura que el ícono sea visible */
+        border: none;
+    }
+
+        .custom-btn-info:hover {
+            background-color: #138496; /* Color más oscuro al pasar el cursor */
+        }
+
+        .custom-btn-info i {
+            font-size: 1.5em; /* Aumenta el tamaño del ícono si es necesario */
+        }
+</style>

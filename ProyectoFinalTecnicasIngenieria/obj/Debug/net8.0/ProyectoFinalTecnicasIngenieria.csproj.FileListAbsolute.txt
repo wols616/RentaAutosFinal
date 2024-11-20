@@ -47,3 +47,4 @@ C:\Users\wilber\source\repos\ProyectoFinalTecnicasIngenieria\ProyectoFinalTecnic
 C:\Users\wilber\source\repos\ProyectoFinalTecnicasIngenieria\ProyectoFinalTecnicasIngenieria\obj\Debug\net8.0\ProyectoFinalTecnicasIngenieria.pdb
 C:\Users\wilber\source\repos\ProyectoFinalTecnicasIngenieria\ProyectoFinalTecnicasIngenieria\obj\Debug\net8.0\ProyectoFinalTecnicasIngenieria.genruntimeconfig.cache
 C:\Users\wilber\source\repos\ProyectoFinalTecnicasIngenieria\ProyectoFinalTecnicasIngenieria\obj\Debug\net8.0\ref\ProyectoFinalTecnicasIngenieria.dll
+C:\Users\wilber\source\repos\ProyectoFinalTecnicasIngenieria\ProyectoFinalTecnicasIngenieria\obj\Debug\net8.0\ProyectoFinalTecnicasIngenieria.sourcelink.json

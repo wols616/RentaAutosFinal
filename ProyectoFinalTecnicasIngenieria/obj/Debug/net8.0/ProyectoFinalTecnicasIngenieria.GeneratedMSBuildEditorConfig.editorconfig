@@ -62,12 +62,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9cdmVyRW1wbGVhZG8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/wilber/source/repos/ProyectoFinalTecnicasIngenieria/ProyectoFinalTecnicasIngenieria/Views/Factura/listaFacturas.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjdHVyYVxsaXN0YUZhY3R1cmFzLmNzaHRtbA==
+[C:/Users/wilber/source/repos/ProyectoFinalTecnicasIngenieria/ProyectoFinalTecnicasIngenieria/Views/Factura/agregarFactura.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjdHVyYVxhZ3JlZ2FyRmFjdHVyYS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/wilber/source/repos/ProyectoFinalTecnicasIngenieria/ProyectoFinalTecnicasIngenieria/Views/Factura/verFactura.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjdHVyYVx2ZXJGYWN0dXJhLmNzaHRtbA==
+[C:/Users/wilber/source/repos/ProyectoFinalTecnicasIngenieria/ProyectoFinalTecnicasIngenieria/Views/Factura/listaFacturas.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRmFjdHVyYVxsaXN0YUZhY3R1cmFzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/wilber/source/repos/ProyectoFinalTecnicasIngenieria/ProyectoFinalTecnicasIngenieria/Views/Home/Index.cshtml]

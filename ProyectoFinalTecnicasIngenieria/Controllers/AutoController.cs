@@ -23,7 +23,7 @@ namespace ProyectoFinalTecnicasIngenieria.Controllers
             return View("agregarAuto");
         }
 
-        public IActionResult AgregandoAutos(string Marca, string Modelo, string Placa, string Tipo, string Estado, double Costo_dia)
+        public IActionResult AgregandoAutos(string Marca, string Modelo, string Placa, string Tipo, double Costo_dia)
         {
             try
             {
@@ -32,7 +32,7 @@ namespace ProyectoFinalTecnicasIngenieria.Controllers
                 auto.Modelo = Modelo;
                 auto.Placa = Placa;
                 auto.Tipo = Tipo;
-                auto.Estado = Estado;
+                auto.Estado = "1";
                 auto.Costo_dia = Costo_dia;
                 auto.agregar(auto);
                 ViewBag.exito = 1;
