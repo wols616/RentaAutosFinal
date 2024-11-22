@@ -39,7 +39,7 @@ namespace ProyectoFinalTecnicasIngenieria.Controllers
             try
             {
                 Clientes objConexion = new Clientes();
-
+                Alquilado.devolverAutoClienteBorrado(idcliente);
                 objConexion.eliminar(idcliente);
                 ViewBag.Clientes = objConexion.listarClientes();
                 ViewBag.exito = 1;
@@ -70,6 +70,7 @@ namespace ProyectoFinalTecnicasIngenieria.Controllers
 
         public IActionResult Crear(string Direccion, string DUI, string Email, string Nombre, string Telefono)
         {
+            Clientes clientes = new Clientes();
             try
             {
                 // Crear objeto de conexión
@@ -88,11 +89,12 @@ namespace ProyectoFinalTecnicasIngenieria.Controllers
                 ViewBag.exito = 0;
             }
 
+            ViewBag.Clientes = clientes.listarClientes();
             // Regresar a la vista 'Agregar' (si quieres redirigir a otra vista, puedes cambiar esto)
             return View("verCliente");
         }
 
-        public IActionResult agregar()
+        public IActionResult AgregarCliente()
         {
             return View("agregarCliente");
         }

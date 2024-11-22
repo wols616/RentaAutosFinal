@@ -1,61 +1,52 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿<div class="container mt-5">
+    <h1 class="text-center mb-4">Detalles del Auto</h1>
+
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th>ID</th>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Placa</th>
+                <th>Tipo</th>
+                <th>Estado</th>
+                <th>Costo por Día</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@ViewBag.autos.idauto</td>
+                <td>@ViewBag.autos.Marca</td>
+                <td>@ViewBag.autos.Modelo</td>
+                <td>@ViewBag.autos.Placa</td>
+                <td>@ViewBag.autos.Tipo</td>
+                <td>@ViewBag.autos.Estado </td>
+                <td>@ViewBag.autos.Costo_dia</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+
 <style>
     body {
-        background-color: #f7f7f7;
-        font-family: 'Arial', sans-serif;
-    }
-
-    h2 {
-        color: #5d3f6b;
-        font-weight: bold;
-        margin-bottom: 10px;
-    }
-
-    h4, h5 {
-        color: #333;
-    }
-
-    .info-card {
-        background-color: white;
-        border-radius: 8px;
-        padding: 20px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        max-width: 600px;
-        margin: 0 auto;
-    }
-
-        .info-card h4 {
-            font-size: 1.2rem;
-            margin-bottom: 8px;
-        }
-
-        .info-card h5 {
-            font-size: 1rem;
-            margin-bottom: 6px;
-        }
-
-    .highlight {
-        color: #5d3f6b;
-        font-weight: bold;
+        background-image: url('https://i.ibb.co/jDHk8gH/Tarjeta-Felicitaci-n-de-Graduaci-n-Ilustrado-Azul-1.png');
+        background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+        background-repeat: no-repeat; /* Evita que la imagen se repita */
+        background-position: center; /* Centra la imagen en la pantalla */
+        background-attachment: fixed; /* Hace que la imagen no se mueva al hacer scroll */
     }
 
     .container {
-        margin-top: 50px;
+        border-radius: 10px; /* Bordes redondeados */
+        padding: 20px;
+        margin-top: 80px;
+        background-color: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
+        backdrop-filter: blur(10px); /* Desenfoque aplicado al fondo detrás del contenedor */
+        color: white;
+    }
+
+    .table {
+        color: white;
     }
 </style>
-
-<div class="container">
-    <div class="info-card text-center">
-        <h4>Marca: <span class="highlight">@ViewBag.autos.Marca</span></h4>
-        <h5>Modelo: <span class="highlight">@ViewBag.autos.Modelo</span></h5>
-        <h5>Placa: <span class="highlight">@ViewBag.autos.Placa</span></h5>
-        <h5>Tipo: <span class="highlight">@ViewBag.autos.Tipo</span></h5>
-        <h5>Estado: <span class="highlight">@ViewBag.autos.Estado</span></h5>
-        <h5>Costo: <span class="highlight">@ViewBag.autos.Costo_dia</span></h5>
-
-    </div>
-</div>

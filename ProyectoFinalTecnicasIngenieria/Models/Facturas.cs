@@ -58,25 +58,21 @@ namespace ProyectoFinalTecnicasIngenieria.Models
             return facturas;
         }
 
-
-
-
-        public Facturas VerFactura(int idFactura)
+        public Facturas VerFactura(int idfactura)
         {
-            Facturas factura = null;
+            Facturas factura = new Facturas();
             string query = "SELECT * FROM Facturas WHERE idfactura = @idfactura";
 
             using (MySqlConnection conexion = new MySqlConnection(cadenaConexion))
             {
                 MySqlCommand comando = new MySqlCommand(query, conexion);
-                comando.Parameters.AddWithValue("@idfactura", idFactura);
-
+                comando.Parameters.AddWithValue("@idfactura", idfactura);
                 try
                 {
                     conexion.Open();
                     MySqlDataReader lector = comando.ExecuteReader();
 
-                    if (lector.Read())
+                    while (lector.Read())
                     {
                         factura = new Facturas
                         {
@@ -90,6 +86,49 @@ namespace ProyectoFinalTecnicasIngenieria.Models
                             IVA = lector.GetDouble("IVA"),
                             total = lector.GetDouble("Total")
                         };
+
+                    }
+                    lector.Close();
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("Hay un error al obtener las facturas: " + ex.Message);
+                }
+            }
+
+            return factura;
+        }
+
+        public Clientes ListarClienteDeFactura(int idFactura)
+        {
+            Clientes cliente = null;
+            string query = "SELECT Clientes.idcliente, Clientes.Nombre, Clientes.Direccion, " +
+                "Clientes.Telefono, Clientes.DUI, Clientes.Email FROM Facturas " +
+                "JOIN Clientes ON Clientes.idcliente = Facturas.idcliente " +
+                "WHERE Facturas.idfactura = @idfactura";
+
+            using (MySqlConnection conexion = new MySqlConnection(cadenaConexion))
+            {
+                MySqlCommand comando = new MySqlCommand(query, conexion);
+                comando.Parameters.AddWithValue("@idfactura", idFactura);
+
+                try
+                {
+                    conexion.Open();
+                    MySqlDataReader lector = comando.ExecuteReader();
+
+                    if (lector.Read())
+                    {
+                        cliente = new Clientes
+                        {
+                            idcliente = lector.GetInt32("idcliente"),
+                            Nombre = lector.GetString("Nombre"),
+                            Direccion = lector.GetString("Direccion"),
+                            Telefono = lector.GetString("Telefono"),
+                            DUI = lector.GetString("DUI"),
+                            Email = lector.GetString("Email")
+
+                        };
                     }
                     lector.Close();
                 }
@@ -98,7 +137,92 @@ namespace ProyectoFinalTecnicasIngenieria.Models
                     throw new Exception("Hay un error: " + ex.Message);
                 }
             }
-            return factura;
+            return cliente;
+        }
+
+        public Alquilado ListarAlquiladosFactura(int idFactura)
+        {
+            Alquilado alquilado = null;
+            string query = "SELECT Alquilados.idalquiler, Alquilados.idauto, Alquilados.idcliente, " +
+                "Alquilados.idempleado, Alquilados.idfactura, Alquilados.Fecha, " +
+                "Alquilados.Fecha_devolver, Alquilados.Devuelto FROM Facturas " +
+                "JOIN Alquilados ON Alquilados.idfactura = Facturas.idfactura " +
+                "WHERE Facturas.idfactura = @idfactura";
+
+            using (MySqlConnection conexion = new MySqlConnection(cadenaConexion))
+            {
+                MySqlCommand comando = new MySqlCommand(query, conexion);
+                comando.Parameters.AddWithValue("@idfactura", idFactura);
+
+                try
+                {
+                    conexion.Open();
+                    MySqlDataReader lector = comando.ExecuteReader();
+
+                    if (lector.Read())
+                    {
+                        alquilado = new Alquilado
+                        {
+                            idalquiler = lector.GetInt32("idalquiler"),
+                            idauto = lector.GetInt32("idauto"),
+                            idcliente = lector.GetInt32("idcliente"),
+                            idempleado = lector.GetInt32("idempleado"),
+                            idfactura = lector.GetInt32("idfactura"),
+                            Fecha = lector.GetDateTime("Fecha"),
+                            Fecha_devolver = lector.GetDateTime("Fecha_devolver"),
+                            Devuelto = lector.GetString("Devuelto")
+
+                        };
+                    }
+                    lector.Close();
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("Hay un error: " + ex.Message);
+                }
+            }
+            return alquilado;
+        }
+
+        public Autos ListarAutoDeFactura(int idFactura)
+        {
+            Autos auto = null;
+            string query = "SELECT Autos.idauto, Marca, Modelo, Placa, Tipo, Estado, Costo_dia FROM Alquilados " +
+                "JOIN Autos ON Autos.idauto = Alquilados.idauto " +
+                "WHERE Alquilados.idfactura = @idFactura";
+
+            using (MySqlConnection conexion = new MySqlConnection(cadenaConexion))
+            {
+                MySqlCommand comando = new MySqlCommand(query, conexion);
+                comando.Parameters.AddWithValue("@idFactura", idFactura);
+
+                try
+                {
+                    conexion.Open();
+                    MySqlDataReader lector = comando.ExecuteReader();
+
+                    if (lector.Read())
+                    {
+                        auto = new Autos
+                        {
+                            idauto = lector.GetInt32(0),
+                            Marca = lector.GetString(1),
+                            Modelo = lector.GetString(2),
+                            Placa = lector.GetString(3),
+                            Tipo = lector.GetString(4),
+                            Estado = lector.GetString(5),
+                            Costo_dia = lector.GetDouble(6)
+
+                        };
+                    }
+                    lector.Close();
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("Hay un error: " + ex.Message);
+                }
+            }
+            return auto;
         }
 
 

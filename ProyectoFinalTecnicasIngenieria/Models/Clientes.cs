@@ -6,10 +6,10 @@ namespace ProyectoFinalTecnicasIngenieria.Models
     {
         private string cadenamysql = "Server=atids.online;Database=atidsuser_DriveNow;Uid=atidsuser_DriveNow;Pwd=contraseña123";
 
+        public int idcliente { get; set; }
         public string Direccion { get; set; }
         public string DUI { get; set; }
         public string Email { get; set; }
-        public int idcliente { get; set; }
         public string Nombre { get; set; }
         public string Telefono { get; set; }
 

@@ -4,35 +4,97 @@
 @{
 }
 
-<h2>Agrege los datos del Cliente</h2>
+<div class="container mt-5">
+    <!-- Título -->
+    <h1 class="text-center mb-4">Agregar Clientes</h1>
 
+    <!-- Formulario -->
+    <form action="/Cliente/Crear" method="post" class="d-flex flex-column align-items-center">
+        <div class="mb-3 w-50">
+            <label for="Nombre" class="form-label">Nombre</label>
+            <input type="text" id="Nombre" class="form-control" name="Nombre" placeholder="Ingrese nombre completo" required />
+        </div>
 
-<form action="/Cliente/Crear" class="container mt-4 w-50">
+        <div class="mb-3 w-50">
+            <label for="Telefono" class="form-label">Teléfono</label>
+            <input type="text" id="Telefono" class="form-control" name="Telefono" placeholder="Ingrese el teléfono" required />
+        </div>
 
-    <div class="form-group">
-        <label>Nombre</label>
-        <input type="text" class="form-control" name="Nombre" required />
-    </div>
-    <div class="form-group">
-        <label>Telefono</label>
-        <input type="text" class="form-control" name="Telefono" required />
-    </div>
-    <div class="form-group">
-        <label>DUI</label>
-        <input type="text" class="form-control" name="DUI" required />
-    </div>
-    <div class="form-group">
-        <label>Correo Electronico</label>
-        <input type="text" class="form-control" name="Email" required />
-    </div>
-    <div class="form-group">
-        <label>Direccion</label>
-        <input type="text" class="form-control" name="Direccion" required />
-    </div>
+        <div class="mb-3 w-50">
+            <label for="DUI" class="form-label">DUI</label>
+            <input type="text" id="DUI" class="form-control" name="DUI" placeholder="Ingrese el DUI" required />
+        </div>
 
-    <button type="submit" class="btn btn-success mt-3">Guardar</button>
-    @*      MODIFICAS A QUE DEVUELVA A HOME
-    *@@*     <a href="@Url.Action("Listado", "Home")" class="btn btn-secondary mt-3">Cancelar</a> *@
-</form>
+        <div class="mb-3 w-50">
+            <label for="Email" class="form-label">Correo Electrónico</label>
+            <input type="email" id="Email" class="form-control" name="Email" placeholder="Ingrese el correo electrónico" required />
+        </div>
 
+        <div class="mb-3 w-50">
+            <label for="Direccion" class="form-label">Dirección</label>
+            <input type="text" id="Direccion" class="form-control" name="Direccion" placeholder="Ingrese la dirección" required />
+        </div>
 
+        <button type="submit" class="btn custom-btn mt-3">Guardar</button>
+    </form>
+</div>
+
+<style>
+    body {
+        background-image: url('https://i.ibb.co/jDHk8gH/Tarjeta-Felicitaci-n-de-Graduaci-n-Ilustrado-Azul-1.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    .container {
+        border-radius: 10px;
+        padding: 20px;
+        margin-top: 50px;
+        background-color: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
+        backdrop-filter: blur(10px); /* Efecto blur */
+        color: white;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para resaltar */
+    }
+
+    .form-label {
+        color: white;
+        font-weight: bold; /* Letra en negrita */
+    }
+
+    .form-control {
+        background-color: rgba(255, 255, 255, 0.2); /* Fondo translúcido */
+        border: 1px solid white; /* Borde blanco */
+        color: white;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+
+        .form-control:focus {
+            border: 1px solid #b2b2b2; /* Color de borde al seleccionar */
+            box-shadow: 0 0 5px white;
+        }
+
+        .form-control::placeholder {
+            color: white; /* Color blanco para el texto del placeholder */
+            opacity: 0.8; /* Opacidad para mejor legibilidad */
+        }
+
+    .custom-btn {
+        background-color: steelblue; /* Color principal */
+        border: none; /* Sin borde */
+        color: white; /* Texto blanco */
+        padding: 10px 20px; /* Espaciado interno */
+        border-radius: 5px; /* Bordes redondeados */
+        transition: 0.3s; /* Transición suave para el hover */
+        font-weight: bold; /* Texto en negrita */
+    }
+
+        .custom-btn:hover {
+            background-color: midnightblue; /* Color en hover */
+            cursor: pointer; /* Cambia el cursor a pointer */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra en hover */
+            color: white;
+        }
+</style>

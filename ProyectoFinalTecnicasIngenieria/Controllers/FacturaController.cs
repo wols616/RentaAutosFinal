@@ -13,15 +13,17 @@ namespace ProyectoFinalTecnicasIngenieria.Controllers
         {
             Facturas facturas = new Facturas();
             ViewBag.facturas = facturas.VerTodasLasFacturas();
-
             return View("listaFacturas");
         }
 
         public IActionResult VerFactura(int id)
         {
             Facturas objListar = new Facturas();
-            Facturas facturas = objListar.VerFactura(id);
-
+            //Clientes clientes = objListar.ListarClienteDeFactura(id);
+            ViewBag.Cliente = objListar.ListarClienteDeFactura(id);
+            ViewBag.Alquilado = objListar.ListarAlquiladosFactura(id);
+            ViewBag.Auto = objListar.ListarAutoDeFactura(id);
+            ViewBag.Factura = objListar.VerFactura(id);
             return View("verFactura");
         }
 
@@ -43,7 +45,6 @@ namespace ProyectoFinalTecnicasIngenieria.Controllers
             int idFactura = 0;
             try
             {
-                
                 factura.idCliente = idCliente;
                 factura.idAuto = idAuto;
                 factura.idEmpleado = idEmpleado;
@@ -64,11 +65,11 @@ namespace ProyectoFinalTecnicasIngenieria.Controllers
                 ViewBag.exito = 0;
             }
             
-            //Alquilado alquilado = new Alquilado(idAuto, idCliente, idEmpleado, idFactura, DateTime.Now, DateTime.Now.AddDays(dias_rentar));
+            Alquilado alquilado = new Alquilado(idAuto, idCliente, idEmpleado, idFactura, DateTime.Now, DateTime.Now.AddDays(dias_rentar));
+            int idalquilado = alquilado.agregarAlquilado(alquilado);
             autos.editarCampo(idAuto, "Estado", "0");
             return View("listaFacturas");
         }
-
 
         public IActionResult ActualizarFacturass(int idFactura, int idCliente, int idAuto, int idEmpleado, DateTime fecha, double subtotal, double iva, double total)
         {
@@ -103,9 +104,38 @@ namespace ProyectoFinalTecnicasIngenieria.Controllers
         public IActionResult EliminarFactura(int id)
         {
             Facturas factura = new Facturas();
+            Autos auto = new Autos();
+            Alquilado alquilado = new Alquilado();
 
             try
             {
+                // Intentar listar el auto y editar su campo
+                try
+                {
+                    auto = factura.ListarAutoDeFactura(id);
+                    if (auto != null) // Verificar si el auto existe
+                    {
+                        auto.editarCampo(auto.idauto, "Estado", "1");
+                    }
+                }
+                catch (Exception ex)
+                {
+                    // Registrar el error, pero permitir que la ejecución continúe
+                    Console.WriteLine($"Error al listar o editar el auto: {ex.Message}");
+                }
+
+                // Editar el campo de "Devuelto" aunque falle lo anterior
+                try
+                {
+                    alquilado.editarCampo(id, "Devuelto", "1");
+                }
+                catch (Exception ex)
+                {
+                    // Registrar el error, pero permitir que la ejecución continúe
+                    Console.WriteLine($"Error al editar campo 'Devuelto': {ex.Message}");
+                }
+
+                // Finalmente, eliminar la factura
                 factura.EliminarFactura(id);
 
                 ViewBag.exito = 1;
@@ -115,8 +145,10 @@ namespace ProyectoFinalTecnicasIngenieria.Controllers
                 ViewBag.exito = 0;
                 ViewBag.errorMensaje = ex.Message;
             }
+
             ViewBag.facturas = factura.VerTodasLasFacturas();
             return View("listaFacturas");
         }
+
     }
 }

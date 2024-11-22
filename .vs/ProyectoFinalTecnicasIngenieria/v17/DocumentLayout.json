@@ -3,52 +3,40 @@
   "WorkspaceRootPath": "C:\\Users\\wilber\\source\\repos\\ProyectoFinalTecnicasIngenieria\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{65D5D3C0-E523-4F6D-8EE1-28B9DD237D84}|ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria.csproj|c:\\users\\wilber\\source\\repos\\proyectofinaltecnicasingenieria\\proyectofinaltecnicasingenieria\\views\\factura\\agregarfactura.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{65D5D3C0-E523-4F6D-8EE1-28B9DD237D84}|ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria.csproj|solutionrelative:proyectofinaltecnicasingenieria\\views\\factura\\agregarfactura.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{65D5D3C0-E523-4F6D-8EE1-28B9DD237D84}|ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria.csproj|c:\\users\\wilber\\source\\repos\\proyectofinaltecnicasingenieria\\proyectofinaltecnicasingenieria\\views\\auto\\editarauto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{65D5D3C0-E523-4F6D-8EE1-28B9DD237D84}|ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria.csproj|solutionrelative:proyectofinaltecnicasingenieria\\views\\auto\\editarauto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{65D5D3C0-E523-4F6D-8EE1-28B9DD237D84}|ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria.csproj|c:\\users\\wilber\\source\\repos\\proyectofinaltecnicasingenieria\\proyectofinaltecnicasingenieria\\controllers\\autocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{65D5D3C0-E523-4F6D-8EE1-28B9DD237D84}|ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria.csproj|solutionrelative:proyectofinaltecnicasingenieria\\controllers\\autocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{65D5D3C0-E523-4F6D-8EE1-28B9DD237D84}|ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria.csproj|c:\\users\\wilber\\source\\repos\\proyectofinaltecnicasingenieria\\proyectofinaltecnicasingenieria\\controllers\\facturacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{65D5D3C0-E523-4F6D-8EE1-28B9DD237D84}|ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria.csproj|solutionrelative:proyectofinaltecnicasingenieria\\controllers\\facturacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{65D5D3C0-E523-4F6D-8EE1-28B9DD237D84}|ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria.csproj|c:\\users\\wilber\\source\\repos\\proyectofinaltecnicasingenieria\\proyectofinaltecnicasingenieria\\views\\factura\\listafacturas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{65D5D3C0-E523-4F6D-8EE1-28B9DD237D84}|ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria.csproj|solutionrelative:proyectofinaltecnicasingenieria\\views\\factura\\listafacturas.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{65D5D3C0-E523-4F6D-8EE1-28B9DD237D84}|ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria.csproj|c:\\users\\wilber\\source\\repos\\proyectofinaltecnicasingenieria\\proyectofinaltecnicasingenieria\\models\\facturas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{65D5D3C0-E523-4F6D-8EE1-28B9DD237D84}|ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria.csproj|solutionrelative:proyectofinaltecnicasingenieria\\models\\facturas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{65D5D3C0-E523-4F6D-8EE1-28B9DD237D84}|ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria.csproj|c:\\users\\wilber\\source\\repos\\proyectofinaltecnicasingenieria\\proyectofinaltecnicasingenieria\\models\\alquilado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{65D5D3C0-E523-4F6D-8EE1-28B9DD237D84}|ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria.csproj|solutionrelative:proyectofinaltecnicasingenieria\\models\\alquilado.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{65D5D3C0-E523-4F6D-8EE1-28B9DD237D84}|ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria.csproj|c:\\users\\wilber\\source\\repos\\proyectofinaltecnicasingenieria\\proyectofinaltecnicasingenieria\\models\\autos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{65D5D3C0-E523-4F6D-8EE1-28B9DD237D84}|ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria.csproj|solutionrelative:proyectofinaltecnicasingenieria\\models\\autos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{65D5D3C0-E523-4F6D-8EE1-28B9DD237D84}|ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria.csproj|c:\\users\\wilber\\source\\repos\\proyectofinaltecnicasingenieria\\proyectofinaltecnicasingenieria\\views\\auto\\agregarauto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{65D5D3C0-E523-4F6D-8EE1-28B9DD237D84}|ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria.csproj|solutionrelative:proyectofinaltecnicasingenieria\\views\\auto\\agregarauto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{65D5D3C0-E523-4F6D-8EE1-28B9DD237D84}|ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria.csproj|c:\\users\\wilber\\source\\repos\\proyectofinaltecnicasingenieria\\proyectofinaltecnicasingenieria\\views\\auto\\listaautos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{65D5D3C0-E523-4F6D-8EE1-28B9DD237D84}|ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria.csproj|solutionrelative:proyectofinaltecnicasingenieria\\views\\auto\\listaautos.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{65D5D3C0-E523-4F6D-8EE1-28B9DD237D84}|ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria.csproj|c:\\users\\wilber\\source\\repos\\proyectofinaltecnicasingenieria\\proyectofinaltecnicasingenieria\\controllers\\alquiladocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{65D5D3C0-E523-4F6D-8EE1-28B9DD237D84}|ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria.csproj|solutionrelative:proyectofinaltecnicasingenieria\\controllers\\alquiladocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{65D5D3C0-E523-4F6D-8EE1-28B9DD237D84}|ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria.csproj|c:\\users\\wilber\\source\\repos\\proyectofinaltecnicasingenieria\\proyectofinaltecnicasingenieria\\views\\auto\\devolverauto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{65D5D3C0-E523-4F6D-8EE1-28B9DD237D84}|ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria.csproj|solutionrelative:proyectofinaltecnicasingenieria\\views\\auto\\devolverauto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{65D5D3C0-E523-4F6D-8EE1-28B9DD237D84}|ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria.csproj|c:\\users\\wilber\\source\\repos\\proyectofinaltecnicasingenieria\\proyectofinaltecnicasingenieria\\views\\empleado\\listaempleado.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{65D5D3C0-E523-4F6D-8EE1-28B9DD237D84}|ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria.csproj|solutionrelative:proyectofinaltecnicasingenieria\\views\\empleado\\listaempleado.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{65D5D3C0-E523-4F6D-8EE1-28B9DD237D84}|ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria.csproj|c:\\users\\wilber\\source\\repos\\proyectofinaltecnicasingenieria\\proyectofinaltecnicasingenieria\\views\\factura\\agregarfactura.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{65D5D3C0-E523-4F6D-8EE1-28B9DD237D84}|ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria.csproj|solutionrelative:proyectofinaltecnicasingenieria\\views\\factura\\agregarfactura.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{65D5D3C0-E523-4F6D-8EE1-28B9DD237D84}|ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria.csproj|c:\\users\\wilber\\source\\repos\\proyectofinaltecnicasingenieria\\proyectofinaltecnicasingenieria\\controllers\\empleadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{65D5D3C0-E523-4F6D-8EE1-28B9DD237D84}|ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria.csproj|solutionrelative:proyectofinaltecnicasingenieria\\controllers\\empleadocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{65D5D3C0-E523-4F6D-8EE1-28B9DD237D84}|ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria.csproj|c:\\users\\wilber\\source\\repos\\proyectofinaltecnicasingenieria\\proyectofinaltecnicasingenieria\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{65D5D3C0-E523-4F6D-8EE1-28B9DD237D84}|ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria.csproj|solutionrelative:proyectofinaltecnicasingenieria\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65D5D3C0-E523-4F6D-8EE1-28B9DD237D84}|ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria.csproj|c:\\users\\wilber\\source\\repos\\proyectofinaltecnicasingenieria\\proyectofinaltecnicasingenieria\\views\\empleado\\agregarempleado.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{65D5D3C0-E523-4F6D-8EE1-28B9DD237D84}|ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria.csproj|solutionrelative:proyectofinaltecnicasingenieria\\views\\empleado\\agregarempleado.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65D5D3C0-E523-4F6D-8EE1-28B9DD237D84}|ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria.csproj|c:\\users\\wilber\\source\\repos\\proyectofinaltecnicasingenieria\\proyectofinaltecnicasingenieria\\views\\cliente\\agregarcliente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{65D5D3C0-E523-4F6D-8EE1-28B9DD237D84}|ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria.csproj|solutionrelative:proyectofinaltecnicasingenieria\\views\\cliente\\agregarcliente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{65D5D3C0-E523-4F6D-8EE1-28B9DD237D84}|ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria.csproj|c:\\users\\wilber\\source\\repos\\proyectofinaltecnicasingenieria\\proyectofinaltecnicasingenieria\\views\\auto\\agregarauto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{65D5D3C0-E523-4F6D-8EE1-28B9DD237D84}|ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria.csproj|solutionrelative:proyectofinaltecnicasingenieria\\views\\auto\\agregarauto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -78,148 +66,114 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Autos.cs",
-              "DocumentMoniker": "C:\\Users\\wilber\\source\\repos\\ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria\\Models\\Autos.cs",
-              "RelativeDocumentMoniker": "ProyectoFinalTecnicasIngenieria\\Models\\Autos.cs",
-              "ToolTip": "C:\\Users\\wilber\\source\\repos\\ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria\\Models\\Autos.cs",
-              "RelativeToolTip": "ProyectoFinalTecnicasIngenieria\\Models\\Autos.cs",
-              "ViewState": "AgIAAIIAAAAAAAAAAAAwwJUAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T06:45:41.215Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Facturas.cs",
-              "DocumentMoniker": "C:\\Users\\wilber\\source\\repos\\ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria\\Models\\Facturas.cs",
-              "RelativeDocumentMoniker": "ProyectoFinalTecnicasIngenieria\\Models\\Facturas.cs",
-              "ToolTip": "C:\\Users\\wilber\\source\\repos\\ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria\\Models\\Facturas.cs",
-              "RelativeToolTip": "ProyectoFinalTecnicasIngenieria\\Models\\Facturas.cs",
-              "ViewState": "AgIAAJMAAAAAAAAAAAAQwKsAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T06:39:38.126Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Alquilado.cs",
-              "DocumentMoniker": "C:\\Users\\wilber\\source\\repos\\ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria\\Models\\Alquilado.cs",
-              "RelativeDocumentMoniker": "ProyectoFinalTecnicasIngenieria\\Models\\Alquilado.cs",
-              "ToolTip": "C:\\Users\\wilber\\source\\repos\\ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria\\Models\\Alquilado.cs",
-              "RelativeToolTip": "ProyectoFinalTecnicasIngenieria\\Models\\Alquilado.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T06:35:34.25Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "agregarFactura.cshtml",
-              "DocumentMoniker": "C:\\Users\\wilber\\source\\repos\\ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria\\Views\\Factura\\agregarFactura.cshtml",
-              "RelativeDocumentMoniker": "ProyectoFinalTecnicasIngenieria\\Views\\Factura\\agregarFactura.cshtml",
-              "ToolTip": "C:\\Users\\wilber\\source\\repos\\ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria\\Views\\Factura\\agregarFactura.cshtml",
-              "RelativeToolTip": "ProyectoFinalTecnicasIngenieria\\Views\\Factura\\agregarFactura.cshtml",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAuwBAAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-20T05:41:15.633Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "listaFacturas.cshtml",
-              "DocumentMoniker": "C:\\Users\\wilber\\source\\repos\\ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria\\Views\\Factura\\listaFacturas.cshtml",
-              "RelativeDocumentMoniker": "ProyectoFinalTecnicasIngenieria\\Views\\Factura\\listaFacturas.cshtml",
-              "ToolTip": "C:\\Users\\wilber\\source\\repos\\ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria\\Views\\Factura\\listaFacturas.cshtml",
-              "RelativeToolTip": "ProyectoFinalTecnicasIngenieria\\Views\\Factura\\listaFacturas.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-20T05:40:01.062Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FacturaController.cs",
-              "DocumentMoniker": "C:\\Users\\wilber\\source\\repos\\ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria\\Controllers\\FacturaController.cs",
-              "RelativeDocumentMoniker": "ProyectoFinalTecnicasIngenieria\\Controllers\\FacturaController.cs",
-              "ToolTip": "C:\\Users\\wilber\\source\\repos\\ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria\\Controllers\\FacturaController.cs",
-              "RelativeToolTip": "ProyectoFinalTecnicasIngenieria\\Controllers\\FacturaController.cs",
-              "ViewState": "AgIAAFoAAAAAAAAAAAAmwGwAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T05:37:55.062Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AlquiladoController.cs",
-              "DocumentMoniker": "C:\\Users\\wilber\\source\\repos\\ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria\\Controllers\\AlquiladoController.cs",
-              "RelativeDocumentMoniker": "ProyectoFinalTecnicasIngenieria\\Controllers\\AlquiladoController.cs",
-              "ToolTip": "C:\\Users\\wilber\\source\\repos\\ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria\\Controllers\\AlquiladoController.cs",
-              "RelativeToolTip": "ProyectoFinalTecnicasIngenieria\\Controllers\\AlquiladoController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T05:35:42.283Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "AutoController.cs",
               "DocumentMoniker": "C:\\Users\\wilber\\source\\repos\\ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria\\Controllers\\AutoController.cs",
               "RelativeDocumentMoniker": "ProyectoFinalTecnicasIngenieria\\Controllers\\AutoController.cs",
               "ToolTip": "C:\\Users\\wilber\\source\\repos\\ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria\\Controllers\\AutoController.cs",
               "RelativeToolTip": "ProyectoFinalTecnicasIngenieria\\Controllers\\AutoController.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAowC4AAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAGoAAAAAAAAAAAAYwHcAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-20T05:31:34.625Z"
+              "WhenOpened": "2024-11-21T23:18:34.884Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "agregarAuto.cshtml",
-              "DocumentMoniker": "C:\\Users\\wilber\\source\\repos\\ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria\\Views\\Auto\\agregarAuto.cshtml",
-              "RelativeDocumentMoniker": "ProyectoFinalTecnicasIngenieria\\Views\\Auto\\agregarAuto.cshtml",
-              "ToolTip": "C:\\Users\\wilber\\source\\repos\\ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria\\Views\\Auto\\agregarAuto.cshtml",
-              "RelativeToolTip": "ProyectoFinalTecnicasIngenieria\\Views\\Auto\\agregarAuto.cshtml",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAADQAAAAHAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "editarAuto.cshtml",
+              "DocumentMoniker": "C:\\Users\\wilber\\source\\repos\\ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria\\Views\\Auto\\editarAuto.cshtml",
+              "RelativeDocumentMoniker": "ProyectoFinalTecnicasIngenieria\\Views\\Auto\\editarAuto.cshtml",
+              "ToolTip": "C:\\Users\\wilber\\source\\repos\\ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria\\Views\\Auto\\editarAuto.cshtml",
+              "RelativeToolTip": "ProyectoFinalTecnicasIngenieria\\Views\\Auto\\editarAuto.cshtml",
+              "ViewState": "AgIAADMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-20T05:31:42.282Z"
+              "WhenOpened": "2024-11-21T23:18:10.431Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 2,
               "Title": "listaAutos.cshtml",
               "DocumentMoniker": "C:\\Users\\wilber\\source\\repos\\ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria\\Views\\Auto\\listaAutos.cshtml",
               "RelativeDocumentMoniker": "ProyectoFinalTecnicasIngenieria\\Views\\Auto\\listaAutos.cshtml",
               "ToolTip": "C:\\Users\\wilber\\source\\repos\\ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria\\Views\\Auto\\listaAutos.cshtml",
               "RelativeToolTip": "ProyectoFinalTecnicasIngenieria\\Views\\Auto\\listaAutos.cshtml",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAAADYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-17T01:14:38.773Z"
+              "WhenOpened": "2024-11-21T23:12:35.346Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "EmpleadoController.cs",
-              "DocumentMoniker": "C:\\Users\\wilber\\source\\repos\\ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria\\Controllers\\EmpleadoController.cs",
-              "RelativeDocumentMoniker": "ProyectoFinalTecnicasIngenieria\\Controllers\\EmpleadoController.cs",
-              "ToolTip": "C:\\Users\\wilber\\source\\repos\\ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria\\Controllers\\EmpleadoController.cs",
-              "RelativeToolTip": "ProyectoFinalTecnicasIngenieria\\Controllers\\EmpleadoController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAArAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T01:06:42.861Z"
+              "DocumentIndex": 5,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\wilber\\source\\repos\\ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "ProyectoFinalTecnicasIngenieria\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\wilber\\source\\repos\\ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "ProyectoFinalTecnicasIngenieria\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACgAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-21T22:13:13.737Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "listaEmpleado.cshtml",
-              "DocumentMoniker": "C:\\Users\\wilber\\source\\repos\\ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria\\Views\\Empleado\\listaEmpleado.cshtml",
-              "RelativeDocumentMoniker": "ProyectoFinalTecnicasIngenieria\\Views\\Empleado\\listaEmpleado.cshtml",
-              "ToolTip": "C:\\Users\\wilber\\source\\repos\\ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria\\Views\\Empleado\\listaEmpleado.cshtml",
-              "RelativeToolTip": "ProyectoFinalTecnicasIngenieria\\Views\\Empleado\\listaEmpleado.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAEAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "devolverAuto.cshtml",
+              "DocumentMoniker": "C:\\Users\\wilber\\source\\repos\\ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria\\Views\\Auto\\devolverAuto.cshtml",
+              "RelativeDocumentMoniker": "ProyectoFinalTecnicasIngenieria\\Views\\Auto\\devolverAuto.cshtml",
+              "ToolTip": "C:\\Users\\wilber\\source\\repos\\ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria\\Views\\Auto\\devolverAuto.cshtml",
+              "RelativeToolTip": "ProyectoFinalTecnicasIngenieria\\Views\\Auto\\devolverAuto.cshtml",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAAAHEAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-17T01:05:46.415Z"
+              "OverriddenGroupName": "ProyectoFinalTecnicasIngenieria\\Views\\Auto",
+              "WhenOpened": "2024-11-21T22:11:20.766Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "agregarFactura.cshtml",
+              "DocumentMoniker": "C:\\Users\\wilber\\source\\repos\\ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria\\Views\\Factura\\agregarFactura.cshtml",
+              "RelativeDocumentMoniker": "ProyectoFinalTecnicasIngenieria\\Views\\Factura\\agregarFactura.cshtml",
+              "ToolTip": "C:\\Users\\wilber\\source\\repos\\ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria\\Views\\Factura\\agregarFactura.cshtml",
+              "RelativeToolTip": "ProyectoFinalTecnicasIngenieria\\Views\\Factura\\agregarFactura.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-21T22:10:37.867Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "agregarEmpleado.cshtml",
+              "DocumentMoniker": "C:\\Users\\wilber\\source\\repos\\ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria\\Views\\Empleado\\agregarEmpleado.cshtml",
+              "RelativeDocumentMoniker": "ProyectoFinalTecnicasIngenieria\\Views\\Empleado\\agregarEmpleado.cshtml",
+              "ToolTip": "C:\\Users\\wilber\\source\\repos\\ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria\\Views\\Empleado\\agregarEmpleado.cshtml",
+              "RelativeToolTip": "ProyectoFinalTecnicasIngenieria\\Views\\Empleado\\agregarEmpleado.cshtml",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAEwAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-21T22:10:27.879Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "agregarCliente.cshtml",
+              "DocumentMoniker": "C:\\Users\\wilber\\source\\repos\\ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria\\Views\\Cliente\\agregarCliente.cshtml",
+              "RelativeDocumentMoniker": "ProyectoFinalTecnicasIngenieria\\Views\\Cliente\\agregarCliente.cshtml",
+              "ToolTip": "C:\\Users\\wilber\\source\\repos\\ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria\\Views\\Cliente\\agregarCliente.cshtml",
+              "RelativeToolTip": "ProyectoFinalTecnicasIngenieria\\Views\\Cliente\\agregarCliente.cshtml",
+              "ViewState": "AgIAADwAAAAAAAAAAAAAAEsAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-21T22:10:02.766Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "agregarAuto.cshtml",
+              "DocumentMoniker": "C:\\Users\\wilber\\source\\repos\\ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria\\Views\\Auto\\agregarAuto.cshtml",
+              "RelativeDocumentMoniker": "ProyectoFinalTecnicasIngenieria\\Views\\Auto\\agregarAuto.cshtml",
+              "ToolTip": "C:\\Users\\wilber\\source\\repos\\ProyectoFinalTecnicasIngenieria\\ProyectoFinalTecnicasIngenieria\\Views\\Auto\\agregarAuto.cshtml",
+              "RelativeToolTip": "ProyectoFinalTecnicasIngenieria\\Views\\Auto\\agregarAuto.cshtml",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAAAFkAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-21T21:20:48.328Z"
             }
           ]
         }

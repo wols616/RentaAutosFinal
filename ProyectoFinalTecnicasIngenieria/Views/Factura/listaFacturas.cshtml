@@ -9,7 +9,7 @@
         <i class="bi bi-plus-square-fill"></i>
     </a>
 
-    <table class="table table-bordered table-hover">
+    <table class="table ">
         <thead class="thead-dark">
             <tr>
                 <th>ID FACTURA</th>
@@ -23,7 +23,7 @@
                 <th>TOTAL</th>
                 <th>Ver</th>
                 <th>Borrar</th>
-                <th>Editar</th>
+               
             </tr>
         </thead>
         <tbody>
@@ -41,7 +41,7 @@
                     <td>@item.total</td>
 
                     <td>
-                        <a href="@Url.Action("VerFactura", "Factura", new { id = @item.idFactura })" class="btn btn-info"><i class="bi bi-eye-fill"></i></a>
+                        <a href="@Url.Action("VerFactura", "Factura", new { id = @item.idFactura })" class="btn custom-btn-info"><i class="bi bi-eye-fill"></i></a>
                     </td>
                      <td>
 
@@ -60,16 +60,58 @@
 
 <style>
     .custom-btn-info {
-        background-color: green; /* color original de btn-info */
+        background-color: steelblue; /* Color original del botón */
         color: white; /* Asegura que el ícono sea visible */
         border: none;
     }
 
         .custom-btn-info:hover {
-            background-color: #138496; /* Color más oscuro al pasar el cursor */
+            background-color: midnightblue; /* Color más oscuro al pasar el cursor */
+            color: white; /* Asegura que el ícono sea visible */
         }
 
         .custom-btn-info i {
             font-size: 1.5em; /* Aumenta el tamaño del ícono si es necesario */
         }
+
+    .btn-danger {
+        background-color: steelblue; /* Rojo para el botón de borrar */
+        color: white;
+        border: none;
+    }
+
+        .btn-danger:hover {
+            background-color: midnightblue; /* Rojo más oscuro al pasar el cursor */
+            color: white; /* Asegura que el ícono sea visible */
+        }
+
+
+        /* Estilo para los iconos dentro de los botones */
+        .btn-danger i,
+        .btn-warning i {
+            font-size: 1.5em; /* Aumenta el tamaño del ícono si es necesario */
+        }
+</style>
+
+<style>
+    body {
+        background-image: url('https://i.ibb.co/jDHk8gH/Tarjeta-Felicitaci-n-de-Graduaci-n-Ilustrado-Azul-1.png');
+        background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+        background-repeat: no-repeat; /* Evita que la imagen se repita */
+        background-position: center; /* Centra la imagen en la pantalla */
+        background-attachment: fixed; /* Hace que la imagen no se mueva al hacer scroll */
+    }
+
+    .container {
+        border-radius: 10px; /* Bordes redondeados */
+        padding: 20px;
+        margin-top: 80px;
+        background-color: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
+        backdrop-filter: blur(10px); /* Desenfoque aplicado al fondo detrás del contenedor */
+        color: white;
+    }
+
+    .table {
+        color: white;
+    }
 </style>

@@ -85,6 +85,83 @@ namespace ProyectoFinalTecnicasIngenieria.Models
             return listaAutos;
         }
 
+        public List<Autos> listarAutosPorIdCliente(int idCliente)
+        {
+            List<Autos> listaAutos = new List<Autos>();
+            string query = "select Facturas.idauto, Marca, Modelo, Placa, Tipo, Estado, Costo_dia from Facturas " +
+                "JOIN Clientes ON Clientes.idcliente = Facturas.idcliente " +
+                "JOIN Autos ON Autos.idauto = Facturas.idauto " +
+                "JOIN Alquilados ON Alquilados.idfactura = Facturas.idfactura " +
+                "where Clientes.idcliente = @idCliente AND Alquilados.Devuelto = 0";
+
+            using (MySqlConnection conexion = new MySqlConnection(cadena))
+            {
+                MySqlCommand comando = new MySqlCommand(query, conexion);
+                comando.Parameters.AddWithValue("@idCliente", idCliente);
+                try
+                {
+                    conexion.Open();
+                    MySqlDataReader lector = comando.ExecuteReader();
+
+                    while (lector.Read())
+                    {
+                        Autos auto = new Autos();
+                        auto.idauto = lector.GetInt32(0);
+                        auto.Marca = lector.GetString(1);
+                        auto.Modelo = lector.GetString(2);
+                        auto.Placa = lector.GetString(3);
+                        auto.Tipo = lector.GetString(4);
+                        auto.Estado = lector.GetString(5);
+                        auto.Costo_dia = lector.GetDouble(6);
+                        listaAutos.Add(auto);
+                    }
+                    lector.Close();
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("Hay un error: " + ex.Message);
+                }
+            }
+            return listaAutos;
+        }
+
+        public List<Alquilado> listarAlquilerPorIdAuto(int idAuto)
+        {
+            List<Alquilado> listaAlquilado= new List<Alquilado>();
+            string query = "SELECT Alquilados.idalquiler, Autos.idauto, idcliente, idempleado, idfactura, " +
+                "Alquilados.Fecha, Alquilados.Fecha_devolver " +
+                "FROM Alquilados JOIN Autos ON Autos.idauto = Alquilados.idauto WHERE Autos.idauto = @idAuto";
+
+            using (MySqlConnection conexion = new MySqlConnection(cadena))
+            {
+                MySqlCommand comando = new MySqlCommand(query, conexion);
+                comando.Parameters.AddWithValue("@idAuto", idAuto);
+                try
+                {
+                    conexion.Open();
+                    MySqlDataReader lector = comando.ExecuteReader();
+
+                    while (lector.Read())
+                    {
+                        Alquilado alquilado = new Alquilado();
+                        alquilado.idalquiler = lector.GetInt32(0);
+                        alquilado.idauto = lector.GetInt32(1);
+                        alquilado.idcliente = lector.GetInt32(2);
+                        alquilado.idempleado = lector.GetInt32(3);
+                        alquilado.idfactura = lector.GetInt32(4);
+                        alquilado.Fecha = DateTime.Parse(lector.GetDateTime(5).ToString("dd/MM/yyyy"));
+                        alquilado.Fecha_devolver = DateTime.Parse(lector.GetDateTime(6).ToString("dd/MM/yyyy"));
+                        listaAlquilado.Add(alquilado);
+                    }
+                    lector.Close();
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("Hay un error: " + ex.Message);
+                }
+            }
+            return listaAlquilado;
+        }
 
         public void agregar(Autos auto)
         {

@@ -1,44 +1,122 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿<div class="container mt-5">
+    <!-- Título -->
+    <h1 class="text-center mb-4">Agregar Empleados</h1>
 
-<!-- Agregar Empleados -->
-<h1 class="text-center mb-4 mt-5">Agregar Empleados</h1>
+    <!-- Mensajes de éxito o error -->
+    @if (ViewBag.exito == 1)
+    {
+        <p class="alert alert-success text-center">Se agregó correctamente</p>
+    }
+    else if (ViewBag.exito == 0)
+    {
+        <p class="alert alert-danger text-center">Hubo un error al agregar</p>
+    }
 
-@if (ViewBag.exito == 1)
-{
-    <p class="alert alert-success">Se agregó correctamente</p>
-}
-else if (ViewBag.exito == 0)
-{
-    <p class="alert alert-danger">Hubo un error al agregar</p>
-}
+    <!-- Formulario -->
+    <form action="/Empleado/AgregandoEmpleados" method="post" class="d-flex flex-column align-items-center">
+        <div class="mb-3 w-50">
+            <label for="Nombre" class="form-label">Nombre</label>
+            <input type="text" id="Nombre" class="form-control" name="Nombre" placeholder="Ingrese nombre completo" required />
+        </div>
 
-<!-- Formulario para agregar Empleados -->
-<form action="/Empleado/AgregandoEmpleados" method="post" class="d-flex flex-column align-items-center">
+        <div class="mb-3 w-50">
+            <label for="Telefono" class="form-label">Teléfono</label>
+            <input type="text" id="Telefono" class="form-control" name="Telefono" placeholder="Ingrese el teléfono" required />
+        </div>
 
-    <div class="mb-3 w-50">
-        <label for="Nombre" class="form-label">Nombre</label>
-        <input type="text" id="Nombre" class="form-control" name="Nombre" placeholder="Ingrese nombre completo" required />
-    </div>
+        <div class="mb-3 w-50">
+            <label for="Cargo" class="form-label">Cargo</label>
+            <input type="text" id="Cargo" class="form-control" name="Cargo" placeholder="Ingrese el cargo" required />
+        </div>
 
-    <div class="mb-3 w-50">
-        <label for="Telefono" class="form-label">Telefono</label>
-        <input type="text" id="Telefono" class="form-control" name="Telefono" placeholder="Ingrese el teléfono" required />
-    </div>
+        <div class="mb-3 w-50">
+            <label for="Email" class="form-label">Email</label>
+            <input type="email" id="Email" class="form-control" name="Email" placeholder="Ingrese el E-mail" required />
+        </div>
 
-    <div class="mb-3 w-50">
-        <label for="Cargo" class="form-label">Cargo</label>
-        <input type="text" id="Cargo" class="form-control" name="Cargo" placeholder="Ingrese el cargo" required />
-    </div>
+        <button class="btn custom-btn mt-3" type="submit">Agregar</button>
+    </form>
+</div>
 
+<style>
+    body {
+        background-image: url('https://i.ibb.co/jDHk8gH/Tarjeta-Felicitaci-n-de-Graduaci-n-Ilustrado-Azul-1.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+    }
 
-    <div class="mb-3 w-50">
-        <label for="Email" class="form-label">Email</label>
-        <input type="text" id="Email" class="form-control" name="Email" placeholder="Ingrese el E-mail" step="0.01" min="0" required />
-    </div>
+    .container {
+        border-radius: 10px;
+        padding: 20px;
+        margin-top: 50px;
+        background-color: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
+        backdrop-filter: blur(10px); /* Efecto blur */
+        color: white;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para resaltar */
+    }
 
-    <button class="btn btn-primary mt-3" type="submit">Agregar</button>
-</form>
+    .form-label {
+        color: white;
+        font-weight: bold; /* Letra en negrita */
+    }
+
+    .form-control,
+    .form-select {
+        background-color: rgba(255, 255, 255, 0.2); /* Fondo translúcido */
+        border: 1px solid white; /* Borde blanco */
+        color: white;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+
+        .form-control:focus,
+        .form-select:focus {
+            border: 1px solid #b2b2b2; /* Color de borde al seleccionar */
+            box-shadow: 0 0 5px white;
+        }
+
+        .form-control::placeholder {
+            color: white; /* Color blanco para el texto del placeholder */
+            opacity: 0.8; /* Opacidad para mejor legibilidad */
+        }
+
+        .form-select option {
+            color: black; /* Color de texto visible en opciones desplegables */
+            background-color: white; /* Fondo blanco en las opciones desplegables */
+        }
+
+    .custom-btn {
+        background-color: steelblue; /* Color principal */
+        border: none; /* Sin borde */
+        color: white; /* Texto blanco */
+        padding: 10px 20px; /* Espaciado interno */
+        border-radius: 5px; /* Bordes redondeados */
+        transition: 0.3s; /* Transición suave para el hover */
+        font-weight: bold; /* Texto en negrita */
+    }
+
+        .custom-btn:hover {
+            background-color: midnightblue; /* Color en hover */
+            cursor: pointer; /* Cambia el cursor a pointer */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra en hover */
+            color: white;
+        }
+
+    .alert {
+        width: 50%;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+
+    .alert-success {
+        background-color: rgba(40, 167, 69, 0.2);
+        color: lightgreen;
+    }
+
+    .alert-danger {
+        background-color: rgba(220, 53, 69, 0.2);
+        color: red;
+    }
+</style>

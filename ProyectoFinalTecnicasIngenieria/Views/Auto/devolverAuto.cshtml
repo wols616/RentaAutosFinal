@@ -1,0 +1,262 @@
+﻿
+<style>
+
+
+    body {
+        background-image: url('https://i.ibb.co/jDHk8gH/Tarjeta-Felicitaci-n-de-Graduaci-n-Ilustrado-Azul-1.png');
+        background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+        background-repeat: no-repeat; /* Evita que la imagen se repita */
+        background-position: center; /* Centra la imagen en la pantalla */
+        background-attachment: fixed; /* Hace que la imagen no se mueva al hacer scroll */
+    }
+
+    .form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column; /* Asegura que los elementos estén en columna */
+    }
+    .form-container {
+        border-radius: 10px; /* Bordes redondeados */
+        padding: 20px;
+        margin-top: 80px;
+        background-color: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
+        backdrop-filter: blur(10px); /* Desenfoque aplicado al fondo detrás del contenedor */
+        color: white;
+    }
+   
+    .form-select {
+        border-radius: 4px;
+        margin-bottom: 15px;
+        background-color: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
+        backdrop-filter: blur(10px); /* Desenfoque aplicado al fondo detrás del contenedor */
+        color: white;
+        font-weight: bolder;
+        border-color: #000000;
+    }
+
+    .form-select option{
+        color: black;
+        font-weight: bold;
+    }
+
+    form-label {
+        font-weight: bolder;
+        color: #ffffff;
+    }
+
+    .custom-btn {
+        background-color: steelblue; /* Color principal */
+        border: none; /* Sin borde */
+        color: white; /* Texto blanco */
+        padding: 10px 20px; /* Espaciado interno */
+        border-radius: 5px; /* Bordes redondeados */
+        transition: 0.3s; /* Transición suave para el hover */
+        font-weight: bold; /* Texto en negrita */
+    }
+
+        .custom-btn:hover {
+            background-color: midnightblue; /* Color en hover */
+            cursor: pointer; /* Cambia el cursor a pointer */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra en hover */
+            color: white;
+        }
+
+    .from-select option{
+        color: red;
+    }
+
+    .form-control:focus,
+    .form-select:focus {
+        border: 1px solid #b2b2b2; /* Color de borde al seleccionar */
+        box-shadow: 0 0 5px white;
+    }
+        /* Estilo para <select> deshabilitado */
+        .form-select:disabled {
+            background-color: rgba(255, 255, 255, 0.1); /* Mantiene el fondo translúcido */
+            backdrop-filter: blur(10px); /* Aplica el desenfoque */
+            color: white; /* Texto blanco */
+            font-weight: bolder; /* Negrita */
+            border-color: #000000; /* Mantiene el color del borde */
+            opacity: 1; /* Asegura que no se vea translúcido */
+            cursor: not-allowed; /* Cambia el cursor para indicar que está deshabilitado */
+        }
+
+
+</style>
+
+
+
+
+<div class="form-container">
+
+    <center><h1 class="mt-5" style="color: #ffffff">Devolver Auto</h1></center>
+
+    <form action="/Auto/DevolviendoAuto" method="post" class="form-container">
+
+    <!-- Select de clientes -->
+    <div class="mb-3 w-100">
+        <label for="Cliente" class="form-label">Cliente</label>
+        <select id="Cliente" class="form-select" name="idCliente" required onchange="clienteSeleccionado()">
+            <option value="">-- Selecciona un cliente --</option>
+        @foreach (var cliente in ViewBag.Clientes)
+        {
+                <option value="@cliente.idcliente">@cliente.Nombre</option>
+        }
+        </select>
+    </div>
+
+    <!-- Select de autos -->
+    <div class="mb-3">
+        <label for="Auto" class="form-label">Auto</label>
+        <select id="Auto" class="form-select" name="idAuto" required onchange="autoSeleccionado()">
+            <option value="">-- Selecciona un auto --</option>
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label for="Fecha" class="form-label">Fecha</label>
+            <select id="Fecha" class="form-select" name="Fecha" disabled>
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label for="FechaDevolver" class="form-label">Fecha a Devolver</label>
+            <select id="FechaDevolver" class="form-select" name="FechaDevolver" disabled>
+        </select>
+    </div>
+
+    <div class="d-flex justify-content-center align-items-center">
+            <button class="custom-btn mt-3" type="submit">Agregar</button>
+    </div>
+</form>
+
+</div>
+
+
+    <script>
+        async function clienteSeleccionado() {
+            // Obtener el id del cliente seleccionado
+            const idCliente = document.getElementById("Cliente").value;
+
+            // Referencia al select de autos
+            const autoSelect = document.getElementById("Auto");
+
+            // Limpiar el select de autos
+            autoSelect.innerHTML = '<option value="">-- Selecciona un auto --</option>';
+
+            // Verificar que se haya seleccionado un cliente válido
+            if (idCliente) {
+                try {
+                    // Realizar la solicitud al servidor
+                    const response = await fetch(`/Auto/ObtenerAutosPorCliente?idCliente=${idCliente}`);
+
+                    // Verificar si la solicitud fue exitosa
+                    if (!response.ok) {
+                        throw new Error("Error al obtener los autos del cliente.");
+                    }
+
+                    // Convertir la respuesta a JSON
+                    const autos = await response.json();
+
+                    // Manejar errores en la respuesta
+                    if (autos.error) {
+                        alert(autos.error);
+                        return;
+                    }
+
+                    // Llenar el select de autos con los datos recibidos
+                    autos.forEach(auto => {
+                        // Verificar que cada auto tenga las propiedades necesarias
+                        if (!auto.idauto || !auto.marca) {
+                            alert("Error: El auto no tiene idauto o Marca: " + JSON.stringify(auto));
+                            return;
+                        }
+
+                        // while (autoSelect.firstChild) {
+                        //     autoSelect.removeChild(autoSelect.firstChild);
+                        // }
+
+                        const option = document.createElement("option");
+                        option.value = auto.idauto;
+                        option.textContent = `${auto.marca}`;
+                        autoSelect.appendChild(option);
+
+                    });
+                } catch (error) {
+                    alert("Error al cargar los autos: " + error.message);
+                }
+            } else {
+                alert("Por favor, selecciona un cliente.");
+            }
+        }
+
+        async function autoSeleccionado() {
+            // Obtener el id del cliente seleccionado
+            const idAuto = document.getElementById("Auto").value;
+
+            // Referencia al select de autos
+            const fechaSelect = document.getElementById("Fecha");
+            const fechaDevolverSelect = document.getElementById("FechaDevolver");
+
+            // Limpiar el select de autos
+            // fechaSelect.innerHTML = '<option value="">-- Selecciona un auto --</option>';
+
+            // Verificar que se haya seleccionado un cliente válido
+            if (idAuto) {
+                try {
+                    // Realizar la solicitud al servidor
+                    const response = await fetch(`/Auto/ObtenerDetallesAlquiler?idAuto=${idAuto}`);
+
+                    // Verificar si la solicitud fue exitosa
+                    if (!response.ok) {
+                        throw new Error("Error al obtener los datos del alquiler.");
+                    }
+
+                    // Convertir la respuesta a JSON
+                    const alquilados = await response.json();
+
+                    // Manejar errores en la respuesta
+                    if (alquilados.error) {
+                        alert(alquilados.error);
+                        return;
+                    }
+
+                    // Llenar el select de autos con los datos recibidos
+                    alquilados.forEach(alquilado => {
+                        // Verificar que cada auto tenga las propiedades necesarias
+                        // if (!alquilado.idauto || !auto.marca) {
+                        //     alert("Error: El auto no tiene idauto o Marca: " + JSON.stringify(auto));
+                        //     return;
+                        // }
+
+                        // while (autoSelect.firstChild) {
+                        //     autoSelect.removeChild(autoSelect.firstChild);
+                        // }
+
+                        const option = document.createElement("option");
+                        option.value = alquilado.idauto;
+                        option.textContent = `${alquilado.fecha}`;
+                        fechaSelect.appendChild(option);
+
+                        const option2 = document.createElement("option");
+                        option2.value = alquilado.idauto;
+                        option2.textContent = `${alquilado.fecha_devolver}`;
+                        fechaDevolverSelect.appendChild(option2);
+                    });
+                } catch (error) {
+                    alert("Error al cargar los autos: " + error.message);
+                }
+            } else {
+                alert("Por favor, selecciona un cliente.");
+            }
+        }
+    </script>
+
+
+
+
+
+
+
+

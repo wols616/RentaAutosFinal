@@ -1,0 +1,166 @@
+﻿<div class="container mt-5">
+
+    <!-- Estado del Auto -->
+    <h2 class="text-center" style="color: @(ViewBag.Alquilado.Devuelto == "1" ? "lightblue" : "red")">
+        @(ViewBag.Alquilado.Devuelto == "1" ? "Auto Devuelto" : "Auto aún no devuelto")
+    </h2>
+
+    <!-- Datos del Cliente -->
+    <h2 class="text-center">Cliente</h2>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th>Nombre</th>
+                <th>Dirección</th>
+                <th>Teléfono</th>
+                <th>DUI</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (ViewBag.Cliente != null)
+            {
+                try
+
+                {
+                    <tr>
+                        <td>@ViewBag.Cliente.Nombre</td>
+                        <td>@ViewBag.Cliente.Direccion</td>
+                        <td>@ViewBag.Cliente.Telefono</td>
+                        <td>@ViewBag.Cliente.DUI</td>
+                        <td>@ViewBag.Cliente.Email</td>
+                    </tr>
+                }
+
+                catch
+
+                {
+                    <tr>
+                        <td colspan="5" style="color: white; font-weight: bold; text-align: center;">Cliente ya no existe</td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="5" style="color: white; font-weight: bold; text-align: center;">Cliente ya no existe</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <!-- Datos del Auto -->
+    <h2 class="text-center">Auto</h2>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th>Marca</th>
+                <th>Modelo</th>
+                <th>Placa</th>
+                <th>Tipo</th>
+                <th>Costo por Día</th>
+            </tr>
+        </thead>
+        <tbody>
+            @if (ViewBag.Auto != null)
+            {
+
+                try
+
+                {
+                    <tr>
+                        <td>@ViewBag.Auto.Marca</td>
+                        <td>@ViewBag.Auto.Modelo</td>
+                        <td>@ViewBag.Auto.Placa</td>
+                        <td>@ViewBag.Auto.Tipo</td>
+                        <td>@ViewBag.Auto.Costo_dia</td>
+                    </tr>
+                }
+
+                catch
+
+                {
+                    <tr>
+                        <td colspan="5" style="color: white; text-align: center; font-weight: bold;">Auto ya no existe</td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="5" style="color: white; font-weight: bold; text-align: center;">Auto ya no existe</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <!-- Datos del Alquiler -->
+    <h2 class="text-center">Datos del Alquiler</h2>
+    <table class="table">
+        <thead class="thead-dark">
+            <tr>
+                <th>Fecha Alquilado</th>
+                <th>Fecha a Devolver</th>
+                <th>Días Rentado</th>
+                <th>Total a Pagar</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@ViewBag.Alquilado.Fecha</td>
+                <td>@ViewBag.Alquilado.Fecha_devolver</td>
+                <td>@ViewBag.Factura.Dias_rentar</td>
+                <td>@ViewBag.Factura.total</td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+
+<style>
+    body {
+        background-image: url('https://i.ibb.co/jDHk8gH/Tarjeta-Felicitaci-n-de-Graduaci-n-Ilustrado-Azul-1.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    .container {
+        margin-top: 50px;
+        border-radius: 10px;
+        padding: 20px;
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        color: white;
+    }
+
+    .table {
+        margin-top: 20px;
+        background-color: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
+        backdrop-filter: blur(10px); /* Desenfoque aplicado al fondo de la tabla */
+        border-radius: 10px; /* Bordes redondeados */
+    }
+
+    .thead-dark th {
+        background-color: steelblue;
+        color: white;
+        text-align: center;
+    }
+
+    tbody td {
+        text-align: center;
+        color: white;
+    }
+
+    table tbody tr:nth-child(odd) {
+        background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    table tbody tr:nth-child(even) {
+        background-color: rgba(255, 255, 255, 0.15);
+    }
+
+    table tbody tr:hover {
+        background-color: rgba(255, 255, 255, 0.2);
+    }
+</style>

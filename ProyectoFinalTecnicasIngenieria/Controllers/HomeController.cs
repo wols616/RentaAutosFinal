@@ -15,6 +15,11 @@ namespace ProyectoFinalTecnicasIngenieria.Controllers
 
         public IActionResult Index()
         {
+            DateTime fechaActual = DateTime.Now;
+            string fechaFormateada = fechaActual.ToString("dddd d 'de' MMMM 'del' yyyy", new System.Globalization.CultureInfo("es-ES"));
+            string fechaConComa = fechaFormateada.Substring(0, 1).ToUpper() + fechaFormateada.Substring(1);
+
+            ViewBag.FechaActual = fechaConComa;
             return View();
         }
 

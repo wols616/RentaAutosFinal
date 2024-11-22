@@ -2,39 +2,49 @@
 
 <style>
     body {
-        background-color: #f7f7f7;
-        font-family: 'Arial', sans-serif;
-    }
-
-    h1 {
-        color: #5d3f6b;
-        text-align: center;
-        margin-bottom: 30px;
+        background-image: url('https://i.ibb.co/jDHk8gH/Tarjeta-Felicitaci-n-de-Graduaci-n-Ilustrado-Azul-1.png');
+        background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+        background-repeat: no-repeat; /* Evita que la imagen se repita */
+        background-position: center; /* Centra la imagen en la pantalla */
+        background-attachment: fixed; /* Hace que la imagen no se mueva al hacer scroll */
     }
 
     .form-container {
-        max-width: 500px;
-        margin: 30px auto;
-        background-color: #ffffff;
-        padding: 30px;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 10px; /* Bordes redondeados */
+        padding: 20px;
+        margin-top: 80px;
+        background-color: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
+        backdrop-filter: blur(10px); /* Desenfoque aplicado al fondo detrás del contenedor */
+        color: white;
     }
 
     .form-control {
         border-radius: 4px;
         margin-bottom: 15px;
+        background-color: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
+        backdrop-filter: blur(10px); /* Desenfoque aplicado al fondo detrás del contenedor */
+        color: white;
+        font-weight: bolder;
+        border-color: #000000;
     }
 
     .btn {
         width: 100%;
         border-radius: 4px;
         font-size: 16px;
+        background-color: steelblue;
+        color: #ffffff;
+        font-weight: bolder;
     }
 
+        .btn:hover {
+            background-color: midnightblue; /* Rojo más oscuro al pasar el cursor */
+            color: #ffffff;
+        }
+
     label {
-        font-weight: bold;
-        color: #333333;
+        font-weight: bolder;
+        color: #ffffff;
     }
 
     .alert {
@@ -43,7 +53,7 @@
 </style>
 
 <div class="form-container">
-    <h1>Editar Auto</h1>
+    <h1 style="color: #ffffff">Editar Auto</h1>
 
     <!-- Mensajes de éxito o error -->
     @if (ViewBag.Exito != null)
@@ -59,7 +69,7 @@
     }
 
     <!-- Formulario de edición de Auto -->
-    <form action="/Empleado/EditandoEmpleado" method="post" class="p-4 bg-white rounded shadow-sm">
+    <form action="/Empleado/EditandoEmpleado" method="post" class="form-container">
         <input type="hidden" name="idempleado" value="@ViewBag.empleados.idempleado" />
 
         <div class="form-group mb-3">
@@ -83,7 +93,7 @@
         </div>
 
 
-        <button type="submit" class="btn btn-success w-100">Actualizar</button>
+        <button type="submit" class="btn w-100">Actualizar</button>
     </form>
 
 </div>

@@ -8,6 +8,18 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/ProyectoFinalTecnicasIngenieria.styles.css" asp-append-version="true" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style>
+
+
+
+        footer {
+            text-align: center;
+            position: absolute; /* Normal para un diseño flexible */
+            bottom: 10px;
+            width: 100%;
+        }
+
+    </style>
 </head>
 <body>
     <header>
@@ -27,13 +39,17 @@
                             <a class="nav-link text-dark" asp-area="" asp-controller="Auto" asp-action="ListadoAutos">Autos</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Factura" asp-action="ListarFactura">Facturas</a>
-                        </li>
-                        <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Cliente" asp-action="listadoClientes">Clientes</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Empleado" asp-action="ListadoEmpleados">Empleados</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Factura" asp-action="ListarFactura">Facturas</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-controller="Auto" asp-action="DevolverAuto">Devolver Auto</a>
                         </li>
                     </ul>
                 </div>
@@ -46,7 +62,7 @@
         </main>
     </div>
 
-    <footer class="border-top footer text-muted">
+    <footer class="" >
         <div class="container">
             &copy; 2024 - ProyectoFinalTecnicasIngenieria - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>

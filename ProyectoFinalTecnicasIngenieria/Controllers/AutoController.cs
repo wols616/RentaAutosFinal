@@ -23,6 +23,60 @@ namespace ProyectoFinalTecnicasIngenieria.Controllers
             return View("agregarAuto");
         }
 
+        public IActionResult DevolverAuto()
+        {
+            Clientes cliente = new Clientes();
+            Autos auto = new Autos();
+            ViewBag.Clientes = cliente.listarClientes();
+            ViewBag.Autos = auto.listar();
+            return View("devolverAuto");
+        }
+
+        public IActionResult DevolviendoAuto(int idAuto, int idCliente)
+        {
+            Autos auto = new Autos();
+            Clientes cliente = new Clientes();
+            auto.editarCampo(idAuto, "Estado", "1");
+            
+            Alquilado.editarCampo(idAuto, idCliente, "Devuelto", "1");
+
+            ViewBag.Clientes = cliente.listarClientes();
+            return View("devolverAuto");
+        }
+
+
+
+        [HttpGet]
+        public JsonResult ObtenerAutosPorCliente(int idCliente)
+        {
+            Autos autos = new Autos();
+            try
+            {
+                List<Autos> listaAutos = autos.listarAutosPorIdCliente(idCliente);
+                return Json(listaAutos);
+            }
+            catch (Exception ex)
+            {
+                return Json(new { error = ex.Message });
+            }
+        }
+
+        [HttpGet]
+        public JsonResult ObtenerDetallesAlquiler(int idAuto)
+        {
+            Autos auto = new Autos();
+            try
+            {
+                List<Alquilado> listaAlquilados = auto.listarAlquilerPorIdAuto(idAuto);
+                return Json(listaAlquilados);
+            }
+            catch (Exception ex)
+            {
+                return Json(new { error = ex.Message });
+            }
+        }
+
+
         public IActionResult AgregandoAutos(string Marca, string Modelo, string Placa, string Tipo, double Costo_dia)
         {
             try
@@ -56,6 +110,7 @@ namespace ProyectoFinalTecnicasIngenieria.Controllers
         public IActionResult BorrandoAuto(int id)
         {
             Autos auto = new Autos();
+            Alquilado.devolverAutoBorrado(id);
             auto.eliminarAuto(id);
             ViewBag.autos = auto.listar();
             return View("listaAutos");

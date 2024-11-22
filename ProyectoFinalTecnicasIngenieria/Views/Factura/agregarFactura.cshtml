@@ -1,57 +1,122 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
+﻿<div class="container mt-5">
+    <!-- Título -->
+    <h1 class="text-center mb-4">Agregar Factura</h1>
 
-<!-- Formulario para agregar Autos -->
-<form action="/Factura/AgregandoFactura" method="post" class="d-flex flex-column align-items-center">
+    <!-- Formulario -->
+    <form action="/Factura/AgregandoFactura" method="post" class="d-flex flex-column align-items-center">
 
-    <div class="mb-3 w-50">
-        <label for="Empleado" class="form-label">Empleado</label>
-        <select id="Empleado" class="form-select" name="idEmpleado" required>
-            @foreach (var empleado in ViewBag.Empleados)
-            {
-                <option value="@empleado.idempleado">@empleado.Nombre</option>
-            }
-        </select>
-    </div>
+        <div class="mb-3 w-50">
+            <label for="Empleado" class="form-label">Empleado</label>
+            <select id="Empleado" class="form-select" name="idEmpleado" required>
+                @foreach (var empleado in ViewBag.Empleados)
 
-    <div class="mb-3 w-50">
-        <label for="Fecha" class="form-label">Fecha</label>
-        <input type="date" id="Fecha" class="form-control" name="fecha" required />
-    </div>
-
-    <div class="mb-3 w-50">
-        <label for="Cliente" class="form-label">Cliente</label>
-        <select id="Cliente" class="form-select" name="idCliente" required>
-            @foreach (var cliente in ViewBag.Clientes)
-            {
-                <option value="@cliente.idcliente">@cliente.Nombre</option>
-            }
-        </select>
-    </div>
-
-    <div class="mb-3 w-50">
-        <label for="Auto" class="form-label">Auto</label>
-        <select id="Auto" class="form-select" name="idAuto" required>
-            @foreach (var auto in ViewBag.Autos)
-            {
-                @if (auto.Estado == "1")
                 {
-                    <option value="@auto.idauto">@auto.Marca</option>
-                }else{  
-                    <option disabled>@auto.Marca (No Disponible)</option>
+                    <option value="@empleado.idempleado">@empleado.Nombre</option>
                 }
-            }
-        </select>
-    </div>
+            </select>
+        </div>
 
-    <div class="mb-3 w-50">
-        <label for="DiasRentar" class="form-label">Cantidad de días a rentar</label>
-        <input type="text" id="DiasRentar" class="form-control" name="dias_rentar" required />
-    </div>
+        <div class="mb-3 w-50">
+            <label for="Fecha" class="form-label">Fecha</label>
+            <input type="date" id="Fecha" class="form-control" name="fecha" required />
+        </div>
 
+        <div class="mb-3 w-50">
+            <label for="Cliente" class="form-label">Cliente</label>
+            <select id="Cliente" class="form-select" name="idCliente" required>
+                @foreach (var cliente in ViewBag.Clientes)
 
-    <button class="btn btn-primary mt-3" type="submit">Agregar</button>
-</form>
+                {
+                    <option value="@cliente.idcliente">@cliente.Nombre</option>
+                }
+            </select>
+        </div>
+
+        <div class="mb-3 w-50">
+            <label for="Auto" class="form-label">Auto</label>
+            <select id="Auto" class="form-select" name="idAuto" required>
+                @foreach (var auto in ViewBag.Autos)
+
+                {
+                    @if (auto.Estado == "1")
+                    {
+                        <option value="@auto.idauto">@auto.Marca</option>
+                    }
+                    else
+                    {
+                        <option disabled>@auto.Marca (No Disponible)</option>
+                    }
+                }
+            </select>
+        </div>
+
+        <div class="mb-3 w-50">
+            <label for="DiasRentar" class="form-label">Cantidad de días a rentar</label>
+            <input type="text" id="DiasRentar" class="form-control" name="dias_rentar" required />
+        </div>
+
+        <button class="btn custom-btn mt-3" type="submit">Agregar</button>
+    </form>
+</div>
+
+<style>
+    body {
+        background-image: url('https://i.ibb.co/jDHk8gH/Tarjeta-Felicitaci-n-de-Graduaci-n-Ilustrado-Azul-1.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-attachment: fixed;
+    }
+
+    .container {
+        border-radius: 10px;
+        padding: 20px;
+        margin-top: 50px;
+        background-color: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
+        backdrop-filter: blur(10px); /* Efecto blur */
+        color: white;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para resaltar */
+    }
+
+    .form-label {
+        color: white;
+        font-weight: bold; /* Letra en negrita */
+    }
+
+    .form-control,
+    .form-select {
+        background-color: rgba(255, 255, 255, 0.2); /* Fondo translúcido */
+        border: 1px solid white; /* Borde blanco */
+        color: white;
+        font-weight: bold;
+        border-radius: 5px;
+    }
+
+        .form-control:focus,
+        .form-select:focus {
+            border: 1px solid #b2b2b2; /* Color de borde al seleccionar */
+            box-shadow: 0 0 5px white;
+        }
+
+        .form-select option {
+            color: black; /* Color de texto visible en opciones desplegables */
+            background-color: white; /* Fondo blanco en las opciones desplegables */
+        }
+
+    .custom-btn {
+        background-color: steelblue; /* Color principal */
+        border: none; /* Sin borde */
+        color: white; /* Texto blanco */
+        padding: 10px 20px; /* Espaciado interno */
+        border-radius: 5px; /* Bordes redondeados */
+        transition: 0.3s; /* Transición suave para el hover */
+        font-weight: bold; /* Texto en negrita */
+    }
+
+        .custom-btn:hover {
+            background-color: midnightblue; /* Color en hover */
+            cursor: pointer; /* Cambia el cursor a pointer */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra en hover */
+            color: white;
+        }
+</style>

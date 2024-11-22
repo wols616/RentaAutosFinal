@@ -4,38 +4,110 @@
 @{
 }
 
-<h2>Edite los datos del Cliente</h2>
 
-<form action="/Cliente/editando" class="container mt-4 w-50">
+<style>
+    body {
+        background-image: url('https://i.ibb.co/jDHk8gH/Tarjeta-Felicitaci-n-de-Graduaci-n-Ilustrado-Azul-1.png');
+        background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+        background-repeat: no-repeat; /* Evita que la imagen se repita */
+        background-position: center; /* Centra la imagen en la pantalla */
+        background-attachment: fixed; /* Hace que la imagen no se mueva al hacer scroll */
+    }
 
-    <div class="form-group">
-        <input type="hidden" class="form-control" name="idcliente" value="@ViewBag.datosCliente.idcliente" required />
-    </div>
-    <div class="form-group">
-        <label>Nombre</label>
-        <input type="text" class="form-control" name="Nombre" value="@ViewBag.datosCliente.Nombre" required />
-    </div>
-    <div class="form-group">
-        <label>Telefono</label>
-        <input type="text" class="form-control" name="Telefono" value="@ViewBag.datosCliente.Telefono" required />
-    </div>
-    <div class="form-group">
-        <label>DUI</label>
-        <input type="text" class="form-control" name="DUI" value="@ViewBag.datosCliente.DUI" required />
-    </div>
-    <div class="form-group">
-        <label>Correo Electronico</label>
-        <input type="text" class="form-control" name="Email" value="@ViewBag.datosCliente.Email" required />
-    </div>
-    <div class="form-group">
-        <label>Direccion</label>
-        <input type="text" class="form-control" name="Direccion" value="@ViewBag.datosCliente.Direccion" required />
-    </div>
+    .form-container {
+        border-radius: 10px; /* Bordes redondeados */
+        padding: 20px;
+        margin-top: 80px;
+        background-color: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
+        backdrop-filter: blur(10px); /* Desenfoque aplicado al fondo detrás del contenedor */
+        color: white;
+    }
 
-    <button type="submit" class="btn btn-success mt-3">Editar</button>
-    @*      MODIFICAS A QUE DEVUELVA A HOME
-    *@@*     <a href="@Url.Action("Listado", "Home")" class="btn btn-secondary mt-3">Cancelar</a> *@
-</form>
+    .form-control {
+        border-radius: 4px;
+        margin-bottom: 15px;
+        background-color: rgba(255, 255, 255, 0.1); /* Fondo translúcido */
+        backdrop-filter: blur(10px); /* Desenfoque aplicado al fondo detrás del contenedor */
+        color: white;
+        font-weight: bolder;
+        border-color: #000000;
+    }
+
+    .btn {
+        width: 100%;
+        border-radius: 4px;
+        font-size: 16px;
+        background-color: steelblue;
+        color: #ffffff;
+        font-weight: bolder;
+    }
+
+        .btn:hover {
+            background-color: midnightblue; /* Rojo más oscuro al pasar el cursor */
+            color: #ffffff;
+        }
+
+    label {
+        font-weight: bolder;
+        color: #ffffff;
+    }
+
+    .alert {
+        margin-top: 20px;
+    }
+
+</style>
+
+<div class="form-container">
+    <h1 style="color: #ffffff">Editar Cliente</h1>
+
+    <!-- Mensajes de éxito o error -->
+    @if (ViewBag.Exito != null)
+    {
+        if (ViewBag.Exito == 1)
+        {
+            <div class="alert alert-success">Los datos del alumno fueron actualizados con éxito.</div>
+        }
+        else if (ViewBag.Exito == 0)
+        {
+            <div class="alert alert-danger">Hubo un error al actualizar los datos del alumno.</div>
+        }
+    }
+
+    <!-- Formulario de edición de Auto -->
+    <form action="/Cliente/editando" method="post" class="form-container">
+        <input type="hidden" name="idcliente" value="@ViewBag.datosCliente.idcliente" />
+
+        <div class="form-group mb-3">
+            <label for="Nombre" class="form-label">Nombre</label>
+            <input type="text" class="form-control" name="Nombre" value="@ViewBag.datosCliente.Nombre" required />
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="Telefono" class="form-label">Telefono</label>
+            <input type="text" class="form-control" name="Telefono" value="@ViewBag.datosCliente.Telefono" required />
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="DUI" class="form-label">DUI</label>
+            <input type="text" class="form-control" name="DUI" value="@ViewBag.datosCliente.DUI" required />
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="Correo Electrónico" class="form-label">Correo Electronico</label>
+            <input type="text" class="form-control" name="Email" value="@ViewBag.datosCliente.Email" required />
+        </div>
+
+        <div class="form-group mb-3">
+            <label for="Dirección" class="form-label">Direccion</label>
+            <input type="text" class="form-control" name="Direccion" value="@ViewBag.datosCliente.Direccion" required />
+        </div>
+
+
+        <button type="submit" class="btn w-100">Actualizar</button>
+    </form>
+
+</div>
 
 
 
